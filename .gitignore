@@ -21,9 +21,10 @@
 .viminfo
 .rnd
 .sqlite_history
-.vim/\.netrwhist
+.vim/.netrwhist
 .vnc/passwd
-.vnc/.*\.(log|pid)
+.vnc/*.log
+.vnc/*.pid
 .wget-hsts
 .Xauthority
 .xsession-errors
