@@ -1,0 +1,9 @@
+[user]
+	email = jason.hord@gmail.com
+	name = Jason Hord
+[core]
+	excludesfile = /home/jhord/.gitignore
+[alias]
+	ci = commit
+	co = checkout
+	s = status

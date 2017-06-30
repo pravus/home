@@ -1,0 +1,72 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! urxvt configuration
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!
+! basic configuration
+!
+
+urxvt.letterSpace: -1
+urxvt.saveLines:  8192
+urxvt.scrollBar:  false
+urxvt.loginShell: true
+urxvt.internalBorder: 0
+
+
+!
+! color configuration
+!
+
+!urxvt.background: #0000aa
+urxvt.background: #1C1C1C
+urxvt.foreground: #ffffff
+urxvt.color0:     #000000
+urxvt.color1:     #aa0000
+urxvt.color2:     #00aa00
+urxvt.color3:     #aa5500
+urxvt.color4:     #0000aa
+urxvt.color5:     #aa00aa
+urxvt.color6:     #00aaaa
+urxvt.color7:     #aaaaaa
+urxvt.color8:     #555555
+urxvt.color9:     #ff5555
+urxvt.color10:    #55ff55
+urxvt.color11:    #ffff55
+urxvt.color12:    #5555ff
+urxvt.color13:    #ff55ff
+urxvt.color14:    #55ffff
+urxvt.color15:    #ffffff 
+
+
+!
+! font configuration
+!
+
+urxvt.font: xft:Misc Fixed
+!urxvt.font: xft:VGA
+!urxvt.font: xft:Hack
+!urxvt.font: 9x15
+
+
+!
+! plugin configuration
+!
+
+!urxvt*perl-lib: /home/jhord/.urxvt
+!urxvt*perl-ext-common:   default,font-cycle
+
+
+!
+! font-cycle configuration
+!
+
+!urxvt.font-cycle.boldClone: plain
+!urxvt.font-cycle.accelerator: C
+
+! Terminus
+!urxvt*font-cycle.font.0:xft:Terminus:pixelsize=13:antialias=false:bold
+!urxvt*font-cycle.font.1:xft:Terminus:pixelsize=15:antialias=false:bold
+!urxvt*font-cycle.font.2:xft:Terminus:pixelsize=17:antialias=false:bold
+!urxvt*font-cycle.font.3:xft:Terminus:pixelsize=19:antialias=false:bold
+!urxvt*font-cycle.font.4:xft:Terminus:pixelsize=23:antialias=false:bold
+!urxvt*font-cycle.font.5:xft:Terminus:pixelsize=27:antialias=false:bold

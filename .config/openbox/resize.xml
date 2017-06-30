@@ -1,0 +1,9 @@
+<resize>
+  <drawContents>yes</drawContents>
+  <popupShow>Always</popupShow>
+  <popupPosition>Center</popupPosition>
+  <popupFixedPosition>
+    <x>0</x>
+    <y>0</y>
+  </popupFixedPosition>
+</resize>

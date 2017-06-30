@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh ln0.carbon.cc 'bin/ip-via-ssh >abyss.nil'

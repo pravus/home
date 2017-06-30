@@ -1,0 +1,147 @@
+<keyboard>
+  <!--
+   *
+   * desktops
+   *
+  -->
+  <keybind key="Menu">
+    <keybind key="F1">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="F2">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="F3">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="F4">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+    <keybind key="s">
+      <action name="ToggleOmniPresent"/>
+    </keybind>
+    <keybind key="Left">
+      <action name="ToggleMaximizeHorz"/>
+    </keybind>
+    <keybind key="Right">
+      <action name="ToggleMaximizeHorz"/>
+    </keybind>
+    <keybind key="Up">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
+    <keybind key="Down">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
+    <keybind key="c">
+      <action name="Execute">
+        <execute>galculator</execute>
+      </action>
+    </keybind>
+    <keybind key="e">
+      <action name="Execute">
+        <execute>urxvt</execute>
+      </action>
+    </keybind>
+    <keybind key="z">
+      <action name="Execute">
+        <execute>xscreensaver-command -activate</execute>
+      </action>
+    </keybind>
+  </keybind>
+
+  <keybind key="W-F1">
+    <action name="Desktop">
+      <desktop>1</desktop>
+    </action>
+  </keybind>
+  <keybind key="W-F2">
+    <action name="Desktop">
+      <desktop>2</desktop>
+    </action>
+  </keybind>
+  <keybind key="W-F3">
+    <action name="Desktop">
+      <desktop>3</desktop>
+    </action>
+  </keybind>
+  <keybind key="W-F4">
+    <action name="Desktop">
+      <desktop>4</desktop>
+    </action>
+  </keybind>
+  <keybind key="W-d">
+    <action name="ToggleShowDesktop"/>
+  </keybind>
+
+  <!--
+   *
+   * windows
+   *
+  -->
+  <keybind key="W-s">
+    <action name="ToggleOmniPresent"/>
+  </keybind>
+  <keybind key="W-Left">
+    <action name="ToggleMaximizeHorz"/>
+  </keybind>
+  <keybind key="W-Right">
+    <action name="ToggleMaximizeHorz"/>
+  </keybind>
+  <keybind key="W-Up">
+    <action name="ToggleMaximizeVert"/>
+  </keybind>
+  <keybind key="W-Down">
+    <action name="ToggleMaximizeVert"/>
+  </keybind>
+  <keybind key="A-F4">
+    <action name="Close"/>
+  </keybind>
+  <keybind key="A-space">
+    <action name="ShowMenu">
+      <menu>client-menu</menu>
+    </action>
+  </keybind>
+  <keybind key="A-Tab">
+    <action name="NextWindow"/>
+  </keybind>
+  <keybind key="A-S-Tab">
+    <action name="PreviousWindow"/>
+  </keybind>
+
+  <!--
+   *
+   * applications
+   *
+  -->
+  <keybind key="Print">
+    <action name="Execute">
+      <execute>x-screenshot</execute>
+    </action>
+  </keybind>
+  <keybind key="W-c">
+    <action name="Execute">
+      <execute>galculator</execute>
+    </action>
+  </keybind>
+  <keybind key="W-e">
+    <action name="Execute">
+      <execute>urxvt</execute>
+    </action>
+  </keybind>
+  <keybind key="W-z">
+    <action name="Execute">
+      <execute>xscreensaver-command -activate</execute>
+    </action>
+  </keybind>
+</keyboard>

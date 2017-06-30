@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -f $HOME/.xwallpaper ]; then
+  display -window root $HOME/.xwallpaper
+else
+  xsetroot -solid '#000000'
+fi

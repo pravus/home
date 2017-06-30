@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://openbox.org/ file:///usr/local/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox">
+  <separator label="openbox" />
+  <item label="urxvt"><action name="Execute"><execute>urxvt</execute></action></item>
+  <item label="xterm"><action name="Execute"><execute>xterm</execute></action></item>
+  <item label="chrome"><action name="Execute"><execute>google-chrome-stable</execute></action></item>
+  <item label="firefox"><action name="Execute"><execute>firefox</execute></action></item>
+  <item label="tor browser"><action name="Execute"><execute>tor-browser-en</execute></action></item>
+  <item label="pcmanfm"><action name="Execute"><execute>pcmanfm</execute></action></item>
+  <separator />
+  <item label="nethack"><action name="Execute"><execute>urxvt -fn 'xft:Terminus:pixelsize=27' -fg white -bg black -e nethack</execute></action></item>
+  <separator />
+  <item label="pavucontrol"><action name="Execute"><execute>pavucontrol</execute></action></item>
+  <item label="audacious"><action name="Execute"><execute>audacious</execute></action></item>
+  <item label="audacity"><action name="Execute"><execute>audacity</execute></action></item>
+  <item label="easytag"><action name="Execute"><execute>easytag</execute></action></item>
+  <separator />
+  <item label="galculator"><action name="Execute"><execute>galculator</execute></action></item>
+  <item label="gimp"><action name="Execute"><execute>gimp</execute></action></item>
+  <item label="guvcview"><action name="Execute"><execute>guvcview</execute></action></item>
+  <item label="k3b"><action name="Execute"><execute>k3b</execute></action></item>
+  <item label="xsensors"><action name="Execute"><execute>xsensors</execute></action></item>
+  <separator />
+  <item label="obconf"><action name="Execute"><execute>obconf</execute></action></item>
+  <item label="reconfigure"><action name="Reconfigure" /></item>
+  <separator />
+  <item label="exit"><action name="Exit" /></item>
+</menu>
+
+</openbox_menu>

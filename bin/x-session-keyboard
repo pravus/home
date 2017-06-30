@@ -1,0 +1,8 @@
+#!/bin/bash
+
+setxkbmap -model evdev -layout us
+setxkbmap -option terminate:ctrl_alt_bksp
+
+xset r rate 250 48
+
+test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap

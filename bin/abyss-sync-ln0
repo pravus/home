@@ -1,0 +1,27 @@
+#!/bin/bash
+
+host=ln0.carbon.cc
+base=$HOME/src/site
+
+name=$(/usr/bin/hostname -f)
+if test "$name" != "abyss.nil"
+then
+  echo "hostname ($name) is not a valid master"
+  exit 1
+fi
+
+cd $base
+if test "$?" != 0
+then
+  echo "chdir($base) failed"
+  exit 1
+fi
+
+
+echo "syncing ${host}"
+rsync -qav --delete --filter '- .hgignore' --filter='- /.hg/' --filter='- /.git/' -F $host:/srv/http/ "${host}"
+(cd "${host}" && hg ci -m current && hg st)
+
+echo "syncing ${host}-jhord"
+rsync -qav --delete --filter '- .hgignore' --filter='- /.hg/' --filter='- /.git/' -F $host:public_html/ "${host}-jhord"
+(cd "${host}-jhord" && hg ci -m current && hg st)

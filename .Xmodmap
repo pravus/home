@@ -1,0 +1,51 @@
+! disable caps-lock
+keycode 66 =
+
+! redefines numeric keypad to be used without NumLock
+!keycode 90 = 0xffb0
+!keycode 87 = 0xffb1
+!keycode 88 = 0xffb2
+!keycode 89 = 0xffb3
+!keycode 83 = 0xffb4
+!keycode 84 = 0xffb5
+!keycode 85 = 0xffb6
+!keycode 79 = 0xffb7
+!keycode 80 = 0xffb8
+!keycode 81 = 0xffb9
+!keycode 91 = period
+keycode 90 = 0
+keycode 87 = 1
+keycode 88 = 2
+keycode 89 = 3
+keycode 83 = 4
+keycode 84 = 5
+keycode 85 = 6
+keycode 79 = 7
+keycode 80 = 8
+keycode 81 = 9
+keycode 91 = period
+
+! deactivates NumLock key
+keycode 77 =            
+
+! media keys
+keycode 234 = F13
+keycode 233 = F14
+keycode 232 = F15
+keycode 231 = F16
+keycode 130 = F17
+keycode 122 = F18
+keycode 230 = F19
+keycode 236 = F20
+keycode 174 = F25
+keycode 176 = F26
+
+keycode 160 = F30
+keycode 164 = F31
+keycode 144 = F32
+keycode 153 = F33
+keycode 162 = F34
+keycode 129 = F35
+
+keycode 108 = Multi_key
+keycode 135 = Multi_key

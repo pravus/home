@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ssh ln0.carbon.cc 'bin/mail-daily-maint'
+rsync -aAX --delete ln0.carbon.cc:Maildir/ $HOME/Maildir

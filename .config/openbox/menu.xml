@@ -1,0 +1,7 @@
+<menu>
+  <file>menu-root.xml</file>
+  <hideDelay>200</hideDelay>
+  <middle>no</middle>
+  <submenuShowDelay>100</submenuShowDelay>
+  <applicationIcons>yes</applicationIcons>
+</menu>

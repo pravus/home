@@ -1,0 +1,8 @@
+#!/bin/bash
+
+test -r $HOME/.Xresources  && xrdb $HOME/.Xresources
+test -r $HOME/.Xmodmap-vnc && xmodmap $HOME/.Xmodmap-vnc
+
+xsetroot -solid '#000000'
+
+openbox&

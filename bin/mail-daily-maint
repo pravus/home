@@ -1,0 +1,87 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use DateTime;
+use File::Copy;
+use Path::Tiny;
+
+my $maildir = $ENV{HOME}. '/Maildir';
+my $year    = DateTime->now( time_zone => 'local' )->strftime( '%Y' );
+
+
+# simple archival
+{
+  my @mailboxes = (
+    '.Archives',
+    '.Sent',
+  );
+
+  for my $mailbox ( @mailboxes ) {
+    my $source = "$maildir/$mailbox";
+    my $dest   = "$maildir/$mailbox.$year";
+
+    maildirmake( $dest );
+
+    my @files = grep -f, ls( "$source/cur" );
+    for my $file ( @files ) {
+      # skip unread messages
+      next
+        unless $file =~ /,[A-Z]*S[A-Z]*\z/;
+
+      move( $file, "$dest/cur" )
+        or die "move($file, $dest/cur): $!\n";
+    }
+  }
+}
+
+# clean-up
+{
+  my %mailboxes = (
+    '.Junk'  => { expiration => 5, skip_unread => 0 },
+    '.Trash' => { expiration => 5, skip_unread => 1 },
+  );
+
+  while( my ( $mailbox, $options ) = each %mailboxes ) {
+    my $path = "$maildir/$mailbox/cur";
+
+    my @files = grep -f && -M > $options->{expiration}, ls( $path );
+    for my $file( @files ) {
+      if( $options->{skip_unread} ) {
+        # skip unread messages
+        next
+          unless $file =~ /,[A-Z]*S[A-Z]*\z/;
+      }
+
+      unlink( $file )
+        or die "$file: unlink(): $!\n";
+    }
+  }
+}
+
+sub ls {
+  my $path = shift;
+
+  opendir my $dh, $path
+    or die "$path: opendir(): $!\n";
+
+  my @files = map "$path/$_", readdir $dh;
+
+  closedir $dh
+    or die "$path: closedir(): $!\n";
+
+  return wantarray ? @files : \@files;
+}
+
+sub maildirmake {
+  my ( $path ) = @_;
+
+  my $umask = umask 0077;
+
+  path( $path )->mkpath;
+  path( $path. '/'. $_ )->mkpath
+    for qw( cur new tmp );
+
+  umask $umask;
+}

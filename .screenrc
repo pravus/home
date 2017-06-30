@@ -1,0 +1,6 @@
+bell_msg ""
+defscrollback 9999
+startup_message off
+vbell off
+
+termcap rxvt-* ti@:te@
