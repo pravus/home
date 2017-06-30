@@ -1,0 +1,70 @@
+# !(@) .procmailrc
+
+DEFAULT=$HOME/Maildir
+
+VERBOSE=yes
+LOGFILE=/home/jhord/.procmail.log
+
+
+########################################################################
+# blackhole
+:0
+* (\
+   ^From:.*<vinylspecialist@vinylspecialist.de>\
+  |^From:.*<webmaster@m109riders.com>\
+  |^From:.*<support.m109riders@gmail.com>\
+  |^From:.*Canadiana Pharmacy\
+  |^From:.*Online Pharmacy\
+  |^From:.*Pharmacy\
+  |^From:.*"Microsoft Outlook"\
+  )
+/dev/null
+
+
+########################################################################
+# spam
+:0 fw
+| /usr/bin/vendor_perl/spamc -l -s 4000000
+
+:0
+* ^X-Spam-Status: Yes
+$DEFAULT/.Junk/
+
+:0
+* (\
+   ^To:.*undisclosed recipients\
+  |^To:.*undisclosed-recipients\
+  |^Subject:.*mailbox.*exceeded\
+  |^Subject:.*\[SPAM:\
+  |^Received:.*develooper\
+  )
+$DEFAULT/.Junk/
+
+
+########################################################################
+# remove read-requests
+:0 fw
+* ^(Disposition-Notification-To|Return-Receipt-To|Registered-Mail-Reply-Requested-By|X-Confirm-Reading-To|X-Receipt-Request-Deleted):.*
+| formail \
+	-I "Disposition-Notification-To:" \
+	-I "Return-Receipt-To:" \
+	-I "Registered-Mail-Reply-Requested-By:" \
+	-I "X-Confirm-Reading-To:" \
+	-I "X-Receipt-Request-Deleted: Yes"
+
+
+########################################################################
+# auto-archive filtering
+:0
+* ^From:.*@.*\.nil
+$DEFAULT/.Archives/
+
+:0
+* ^From:.*@.*carbon.cc
+$DEFAULT/.Archives/
+
+
+########################################################################
+# default
+:0
+$DEFAULT/

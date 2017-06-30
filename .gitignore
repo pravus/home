@@ -18,10 +18,11 @@
 .lesshst
 .mongorc.js
 .nvidia-settings-rc
-.viminfo
+.procmail.log
 .rnd
 .sqlite_history
 .vim/.netrwhist
+.viminfo
 .vnc/passwd
 .vnc/*.log
 .vnc/*.pid
