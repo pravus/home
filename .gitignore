@@ -1,5 +1,8 @@
 # globs
 **/*.sw[a-z]
+**/.perl6/
+.vnc/*.log
+.vnc/*.pid
 
 # file excludes
 .asunder
@@ -24,13 +27,10 @@
 .vim/.netrwhist
 .viminfo
 .vnc/passwd
-.vnc/*.log
-.vnc/*.pid
 .wget-hsts
 .Xauthority
 .xsession-errors
 bin/wlog
-tmp
 
 # directory excludes
 .adobe/
@@ -68,7 +68,6 @@ tmp
 .node-gyp/
 .nv/
 .oracle_jre_usage/
-.perl6/
 .pki/
 .ssh/
 .tor-browser-en/
