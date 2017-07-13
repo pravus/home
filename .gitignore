@@ -4,6 +4,9 @@
 .vnc/*.log
 .vnc/*.pid
 
+# symlink excludes
+tmp
+
 # file excludes
 .asunder
 .config/emaildefaults
@@ -52,6 +55,7 @@ bin/wlog
 .config/menus/
 .config/phototonic/
 .config/pulse/
+.config/xfe/
 .gimp-2.8/
 .gnome/
 .gnupg/

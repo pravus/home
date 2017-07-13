@@ -11,7 +11,7 @@
   <item label="chrome"><action name="Execute"><execute>google-chrome-stable</execute></action></item>
   <item label="firefox"><action name="Execute"><execute>firefox</execute></action></item>
   <item label="tor browser"><action name="Execute"><execute>tor-browser-en</execute></action></item>
-  <item label="pcmanfm"><action name="Execute"><execute>pcmanfm</execute></action></item>
+  <item label="xfe"><action name="Execute"><execute>xfe</execute></action></item>
   <separator />
   <item label="nethack"><action name="Execute"><execute>urxvt -fn 'xft:Terminus:pixelsize=27' -fg white -bg black -e nethack</execute></action></item>
   <separator />
