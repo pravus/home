@@ -1,0 +1,51 @@
+#!/bin/bash
+
+include_files=()
+exclude_files=()
+
+usage() {
+  echo "usage: git-wrap [OPTIONS] command [ARGS]"
+  echo "options:"
+  echo "  -i: run 'git add' on the given file after running command'"
+  echo "  -x: run 'git checkout' on the given file after running command'"
+}
+
+# getopts to the chopter!
+while getopts 'i:x:?' chopter; do
+  case $chopter in
+    'i')
+      include_files[${#include_files[*]}]="$OPTARG"
+    ;;
+
+    'x')
+      exclude_files[${#include_files[*]}]="$OPTARG"
+    ;;
+
+    '?')
+      usage
+      exit 1
+    ;;
+  esac
+done
+
+if [[ $# -lt $OPTIND ]]; then
+  echo "$0: no command given" >&2
+  usage
+  exit 1
+fi
+
+# put them in the iron maiden
+shift $(($OPTIND - 1))
+bin=$1
+shift
+
+# execute them
+$bin "$@"
+
+if [[ ${#include_files[*]} -gt 0 ]]; then
+  git add "${include_files[@]}"
+fi
+
+if [[ ${#exclude_files[*]} -gt 0 ]]; then
+  git checkout "${exclude_files[@]}"
+fi

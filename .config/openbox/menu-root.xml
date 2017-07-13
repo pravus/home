@@ -20,7 +20,7 @@
   <item label="audacity"><action name="Execute"><execute>audacity</execute></action></item>
   <item label="easytag"><action name="Execute"><execute>easytag</execute></action></item>
   <separator />
-  <item label="galculator"><action name="Execute"><execute>galculator</execute></action></item>
+  <item label="calculator"><action name="Execute"><execute>x-calculator</execute></action></item>
   <item label="gimp"><action name="Execute"><execute>gimp</execute></action></item>
   <item label="guvcview"><action name="Execute"><execute>guvcview</execute></action></item>
   <item label="k3b"><action name="Execute"><execute>k3b</execute></action></item>
