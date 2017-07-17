@@ -45,7 +45,7 @@
     </keybind>
     <keybind key="c">
       <action name="Execute">
-        <execute>galculator</execute>
+        <execute>x-calculator</execute>
       </action>
     </keybind>
     <keybind key="e">
@@ -131,7 +131,7 @@
   </keybind>
   <keybind key="W-c">
     <action name="Execute">
-      <execute>galculator</execute>
+      <execute>x-calculator</execute>
     </action>
   </keybind>
   <keybind key="W-e">
