@@ -39,7 +39,7 @@ path-append() {
 # path
 #
 
-path-prepend /site/perl/bin /site/perl6/share/perl6/site/bin /site/perl6/bin /site/ruby/bin /site/node/bin /site/java/bin $HOME/.local/bin $HOME/bin
+path-prepend /site/perl/bin /site/perl6/share/perl6/site/bin /site/perl6/bin /site/python/bin /site/ruby/bin /site/node/bin /site/java/bin $HOME/.local/bin $HOME/bin
 export PATH
 
 
