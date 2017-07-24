@@ -53,6 +53,7 @@ w:ck:Boeing
 w:ck:Boxing
 w:ck:Bowhunt([sz]|er|ing)?
 w:ck:Bowling
+w:ck:Bronzino
 w:ck:Bruce Lee
 w:ck:Bushcraft(er)?
 w:c:Buzz
@@ -128,7 +129,7 @@ w:ck:Latenight
 w:ck:League
 w:ck:Let'?s\W*Play
 w:ck:Letterman
-w:ck:Live
+w:c:Live
 w:k:LGBT
 w:ck:Louis\W*CK
 w:ck:Lockheed

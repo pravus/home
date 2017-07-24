@@ -25,6 +25,7 @@ tmp
 .mongorc.js
 .nvidia-settings-rc
 .procmail.log
+.python_history
 .rnd
 .sqlite_history
 .vim/.netrwhist
