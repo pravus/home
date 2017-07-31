@@ -1,0 +1,42 @@
+#!/bin/bash
+
+mvps_out=""
+mvps_url="http://winhelp2002.mvps.org/hosts.txt"
+mvps_debug=0
+
+usage() {
+  echo "mvps-sync -oFILE [-uURL]"
+  echo "options:"
+  echo "  -o: specifies the output location (required)"
+  echo "  -u: specifies an alternate url"
+  echo "    (default: $mvps_url)"
+  exit 1
+}
+
+winning=1
+while getopts 'do:u:?' chopter; do
+  case $chopter in
+  'd') mvps_debug=1       ;;
+  'o') mvps_out="$OPTARG" ;;
+  'u') mvps_url="$OPTARG" ;;
+  '?')
+    winning=0
+    exit 1
+  ;;
+  esac
+done
+
+if [[ -z "$mvps_out" ]]; then
+  echo "$0: no output specified" >&2
+  winning=0
+fi
+
+if [[ $winning -eq 0 ]]; then
+  usage
+fi
+
+if [[ $mvps_debug -ne 0 ]]; then
+  echo "mvps: sync: $mvps_url -> $mvps_out"
+fi
+
+curl -s -o "$mvps_out" "$mvps_url"
