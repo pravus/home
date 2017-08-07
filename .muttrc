@@ -21,5 +21,8 @@ macro pager c "<change-folder>?<toggle-mailboxes>" "open a different folder"
 macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
 macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
 
-macro index <Up>   "<previous-entry>" "next entry"
-macro index <Down> "<next-entry>" "next entry"
+bind index <Up>   previous-entry
+bind index <Down> next-entry
+
+bind pager <Up>   previous-line
+bind pager <Down> next-line
