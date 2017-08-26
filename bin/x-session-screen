@@ -1,3 +1,53 @@
 #!/bin/bash
 
-xset +dpms
+mode_usage() {
+  echo "usage: x-session-screen [-f|-s] [-v]"
+  echo "options:"
+  echo "  -f : specifies free mode"
+  echo "  -s : specifies save mode"
+  echo "  -v : be verbose"
+}
+
+mode_free() {
+  test $verbose -ne 0 && echo "entering free mode"
+  xset -dpms
+}
+
+mode_save() {
+  test $verbose -ne 0 && echo "entering save mode"
+  xset +dpms
+}
+
+verbose=0
+mode="save"
+while getopts 'fsv?' chopter; do
+  case $chopter in
+    'f')
+      mode="free"
+    ;;
+
+    's')
+      mode="save"
+    ;;
+
+    'v') verbose=1;;
+
+    '?')
+      mode="usage"
+    ;;
+  esac
+done
+
+case $mode in
+  'free')
+    mode_free
+  ;;
+
+  'save')
+    mode_save
+  ;;
+
+  'usage')
+    mode_usage
+  ;;
+esac

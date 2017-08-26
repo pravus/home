@@ -28,6 +28,7 @@ w:ck:Air\W*Crash
 w:ck:Air\W*Line[rsz]?
 w:ck:Air\W*Soft
 w:ck:Alien
+w:ck:Alex\W*Jones
 w:ck:Ark\W*Extinction
 w:ck:Arma
 w:c:Apple
@@ -45,6 +46,7 @@ w:ck:Biking
 w:ck:Bill\W*Burr
 w:ck:Bill\W*Nye
 w:ck:Binding of Isaac
+w:ck:Black\W*Ops
 w:ck:Bloomberg
 w:ck:BMX
 w:ck:Boat
@@ -108,6 +110,7 @@ w:c:Gardening
 w:k:Gervais
 w:k:Gordon Ramsay
 w:k:Gowdy
+w:c:Good\W*Mythical\W*Morning
 w:k:Golden Globe[sz]?
 w:ck:Got\W*Talent
 w:ck:GTA
@@ -119,13 +122,15 @@ w:ck:Hoard(er[sz]?|ing)?
 w:c:Hot
 w:c:Hydraulic\W*Press
 w:ck:Jive
+w:ck:John\W*Oliver
 w:ck:Judge Judy
 w:ck:Kids
 w:c:Killer
 w:ck:Kingdom Hearts
 w:ck:Kitchen\W*Nightmare[sz]?
+w:c:KitKat
 w:ck:Kitt(en[sz]?|y|ies)
-w:ck:Latenight
+w:ck:Late\W*Night
 w:ck:League
 w:ck:Let'?s\W*Play
 w:ck:Letterman
@@ -181,6 +186,7 @@ w:c:Plane[sz]?
 w:ck:Pok[eé]mon
 w:ck:Poker
 w:k:Police
+w:ck:pregnant
 w:ck:Prison[sz]?
 w:ck:PS[23]
 w:c:Psychology
@@ -211,6 +217,7 @@ w:c:Sports
 w:k:Squat
 w:ck:StarCraft
 w:ck:Star Wars
+w:c:Step\W*Up
 w:ck:Strongest (Wo)?Man
 w:ck:Soccer
 w:ck:SuperHero
@@ -225,6 +232,7 @@ w:ck:Ted\W*Cruz
 w:ck:Telemundo
 w:ck:Tennis
 w:ck:Tiny House[sz]?
+w:c:TinyKittens
 w:ck:TF2
 w:c:Top
 w:ck:Toy[sz]?
