@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MyTube</title>
+    <style>
+      body {
+        font-family: helvetica;
+        font-size:   80%;
+        min-width:   320px;
+      }
+
+      nav {
+        height:  320px;
+        width:   320px;
+        margin:  0px;
+        padding: 0px;
+
+        background: #cfc;
+        border: 1px solid #3f3;
+      }
+
+      nav ul {
+        display: block;
+        margin:  0px;
+        padding: 0px;
+      }
+
+      nav ul li {
+        display:    inline-block;
+        list-style: none;
+        margin:     0px;
+        padding:    0px;
+        /* width: 64px; */
+        width:      20%;
+        cursor:     pointer;
+      }
+
+      nav ul li.open {
+        font-weight: bold;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="options">Options</li>
+        <li id="channels">Channels</li>
+        <li id="about" class="open">About</li>
+      </ul>
+    </nav>
+    <main>
+    </main>
+  </body>
+</html>
+

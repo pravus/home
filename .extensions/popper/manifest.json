@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "Popper",
+  "description": "Pops Bubbles",
+  "version": "0.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "popper-start.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "popper-end.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
