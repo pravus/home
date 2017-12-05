@@ -22,6 +22,7 @@ tmp
 .hgrc
 .g.db
 .lesshst
+.lmmsrc.xml
 .mongorc.js
 .nvidia-settings-rc
 .procmail.log
