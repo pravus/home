@@ -26,6 +26,7 @@ var rules = {
     new RegExp(/\bhurstwic\b/i),
     new RegExp(/\bkaku\b/i),
     new RegExp(/\bsurvive the jive\b/i),
+    new RegExp(/\bjason scott\b/i),
   ]
 };
 
