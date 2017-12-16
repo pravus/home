@@ -5,6 +5,7 @@
 .vnc/*.pid
 
 # symlink excludes
+media
 tmp
 
 # file excludes
