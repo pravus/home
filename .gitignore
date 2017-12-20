@@ -25,6 +25,7 @@ tmp
 .lesshst
 .lmmsrc.xml
 .mongorc.js
+.node_repl_history
 .nvidia-settings-rc
 .procmail.log
 .python_history
