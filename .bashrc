@@ -126,9 +126,10 @@ case "$-" in
       alias vim="vim -u $UHOME/.vimrc"
     }
 
-    type -p rdesktop  &>/dev/null && alias rdesktop='rdesktop -a 24 -g 1024x768' -r sound:local
-    type -p x11vnc    &>/dev/null && alias x11vnc='x11vnc -noxrecord -rfbauth ~/.vnc/passwd'
+    type -p mysql     &>/dev/null && alias mysql='mysql -A -b -p'
+    type -p rdesktop  &>/dev/null && alias rdesktop='rdesktop -a 24 -g 1024x768 -r sound:local'
     type -p systemctl &>/dev/null && export SYSTEMD_PAGER=
+    type -p x11vnc    &>/dev/null && alias x11vnc='x11vnc -noxrecord -rfbauth ~/.vnc/passwd'
 
     alias cp &>/dev/null && unalias cp
     alias mv &>/dev/null && unalias mv
