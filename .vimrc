@@ -27,9 +27,10 @@ augroup gentoo
 augroup END
 
 augroup filetypedetect
-  au BufNewFile,BufRead *.pc    setf c
-  au BufNewFile,BufRead *.psgi  setf perl
-  au BufNewFile,BufRead *.p6sgi setf perl6
+  au BufNewFile,BufRead extensions.conf setf asterisk
+  au BufNewFile,BufRead *.pc            setf c
+  au BufNewFile,BufRead *.psgi          setf perl
+  au BufNewFile,BufRead *.p6sgi         setf perl6
 augroup END
 
 au FileChangedRO * set noreadonly
@@ -45,8 +46,8 @@ au FileType make   set noexpandtab
 au FileType perl   let perl_extended_vars=1
 au FileType python let python_highlight_all=1
 au FileType scheme set lisp
-au FileType sql    set filetype=plsql
-au FileType proc   set filetype=c
+"au FileType sql    set filetype=plsql
+"au FileType proc   set filetype=c
 au FileType *      set autoindent
 
 if version >= 700
@@ -56,8 +57,8 @@ if version >= 700
 endif
 
 mapclear
+nnoremap <F1>  <NOP>
 nnoremap <F9>  :syntax sync fromstart<CR>
 nnoremap <F12> :set autoindent!<CR>
 inoremap <F12> <ESC>:set autoindent!<CR>i
 nnoremap <CR>  :noh<CR>
-
