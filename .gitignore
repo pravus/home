@@ -13,8 +13,10 @@ tmp
 .config/emaildefaults
 .config/k3brc
 .config/knfsshare
+.config/mimeapps.list
 .config/pavucontrol.ini
 .config/Trolltech.conf
+.config/QtProject.conf
 .dbshell
 .erlang.cookie
 .esd_auth
@@ -25,6 +27,7 @@ tmp
 .lesshst
 .lmmsrc.xml
 .mongorc.js
+.mysql_history
 .node_repl_history
 .nvidia-settings-rc
 .procmail.log
@@ -45,6 +48,8 @@ bin/wlog
 .bundle/
 .cache/
 .config/audacious/
+.config/Code Industry/
+.config/configstore/
 .config/dconf/
 .config/easytag/
 .config/enchant/
@@ -59,7 +64,9 @@ bin/wlog
 .config/menus/
 .config/phototonic/
 .config/pulse/
+.config/VirtualBox/
 .config/xfe/
+.gem/
 .gimp-2.8/
 .gnome/
 .gnupg/
@@ -81,6 +88,7 @@ bin/wlog
 .ssh/
 .tor-browser-en/
 .thumbnails/
+.vagrant.d/
 builds/
 Maildir/
 media/
@@ -89,3 +97,4 @@ private/
 public_html/
 src/
 tmp/
+VirtualBox VMs/
