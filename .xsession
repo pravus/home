@@ -11,6 +11,11 @@ test -r $HOME/.xsession-errors && > $HOME/.xsession-errors
 test -r $HOME/.bashrc && . $HOME/.bashrc
 
 #
+# start systemd shit
+#
+test -x /etc/X11/xinit/xinitrc.d/50-systemd-user.sh && /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+
+#
 # load application resources
 #
 test -r $HOME/.Xresources && xrdb $HOME/.Xresources

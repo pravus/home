@@ -11,6 +11,7 @@ tmp
 # file excludes
 .asunder
 .config/emaildefaults
+.config/dunst
 .config/k3brc
 .config/knfsshare
 .config/mimeapps.list
@@ -73,18 +74,22 @@ bin/wlog
 .gphoto/
 .hg/
 .icons/
+.java/
 .kde4/
 .links/
 .local/
 .macromedia/
 .minetest/
 .mozilla/
+.nagstamon/
+.nestopia/
 .nestopia/
 .npm/
 .node-gyp/
 .nv/
 .oracle_jre_usage/
 .pki/
+.purple/
 .ssh/
 .tor-browser-en/
 .thumbnails/
