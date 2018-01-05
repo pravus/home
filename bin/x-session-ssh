@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if type -p ssh-agent &>/dev/null; then
+  type -p qt4-ssh-askpass && SSH_ASKPASS=$(type -p qt4-ssh-askpass)
+
+  eval $(ssh-agent-s)
+  ssh-add
+fi

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+type -p pulseaudio   &>/dev/null && pulseaudio --start
+type -p xscreensaver &>/dev/null && xscreensaver -no-splash &
+type -p nagstamon    &>/dev/null && nagstamon &
+type -p conky        &>/dev/null && conky -d

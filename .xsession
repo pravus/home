@@ -6,14 +6,14 @@
 test -r $HOME/.xsession-errors && > $HOME/.xsession-errors
 
 #
-# load profile
-#
-test -r $HOME/.bashrc && . $HOME/.bashrc
-
-#
 # start systemd shit
 #
 test -x /etc/X11/xinit/xinitrc.d/50-systemd-user.sh && /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+
+#
+# load profile
+#
+test -r $HOME/.bashrc && . $HOME/.bashrc
 
 #
 # load application resources
@@ -26,7 +26,9 @@ test -r $HOME/.Xresources && xrdb $HOME/.Xresources
 test -x $HOME/bin/x-session-keyboard && $HOME/bin/x-session-keyboard
 test -x $HOME/bin/x-session-mouse    && $HOME/bin/x-session-mouse
 
+#
 # screen settings
+#
 test -x $HOME/bin/x-session-screen   && $HOME/bin/x-session-screen
 
 #
@@ -35,16 +37,14 @@ test -x $HOME/bin/x-session-screen   && $HOME/bin/x-session-screen
 test -x $HOME/bin/x-session-wallpaper && $HOME/bin/x-session-wallpaper
 
 #
-# daemons
+# launch background programs
 #
-#docker &
-pulseaudio --start
-#xscreensaver -no-splash &
-conky -d
+test -x $HOME/bin/x-session-exec && $HOME/bin/x-session-exec
 
-eval $(ssh-agent -s)
-test -x "/usr/bin/qt4-ssh-askpass" && export SSH_ASKPASS=/usr/bin/qt4-ssh-askpass
-ssh-add
+#
+# set up ssh agent
+#
+test -x $HOME/bin/x-session-ssh && $HOME/bin/x-session-ssh
 
 #
 # window manager
