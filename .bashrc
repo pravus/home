@@ -6,13 +6,6 @@ test "$OSTYPE" = "linux" -a -r /etc/profile && . /etc/profile
 
 
 ########################################################################
-# set UHOME
-#
-
-UHOME=${TTYHOME:-$HOME}
-
-
-########################################################################
 # functions
 #
 
@@ -47,45 +40,14 @@ export PATH
 # environment settings
 #
 
-EDITOR="vim -u $UHOME/.vimrc"
-VISUAL="vim -u $UHOME/.vimrc"
-export EDITOR VISUAL
-
-GIT_PAGER=
-export GIT_PAGER
-
 HISTCONTROL=ignoredups
 HISTFILE=
 HISTFILESIZE=0
 HISTSIZE=9999
 export HISTCONTROL HISTFILE HISTFILESIZE HISTSIZE
 
-test -r $UHOME/.inputrc && {
-  INPUTRC=$UHOME/.inputrc
-  export INPUTRC
-}
-
 test -z "$LC_ALL" && LC_ALL=en_US.UTF-8
 export LC_ALL
-
-LESS="$LESS -fRQ"
-export LESS
-
-PAGER=less
-export PAGER
-
-PERLDOC='-MPod::Text::Color::Delight'
-export PERLDOC
-
-test -r $UHOME/.screenrc && {
-  SCREENRC=$UHOME/.screenrc
-  export SCREENRC
-}
-
-test -d "$UHOME/.terminfo" && {
-  TERMINFO="$UHOME/.terminfo"
-  export TERMINFO
-}
 
 
 ########################################################################
@@ -115,25 +77,79 @@ esac
 case "$-" in
   *i*)
     ####################################################################
+    # interactive environment
+    #
+
+    UHOME=${TTYHOME:-$HOME}
+
+    env which git &>/dev/null && {
+      GIT_PAGER=
+      export GIT_PAGER
+    }
+
+    test -r $UHOME/.inputrc && {
+      INPUTRC=$UHOME/.inputrc
+      export INPUTRC
+    }
+
+    env which less &>/dev/null && {
+      LESS="-fRQ"
+      export LESS
+
+      PAGER=less
+      export PAGER
+    }
+
+    env which perldoc &>/dev/null && {
+      PERLDOC='-MPod::Text::Color::Delight'
+      export PERLDOC
+    }
+
+    test -r $UHOME/.screenrc && {
+      SCREENRC=$UHOME/.screenrc
+      export SCREENRC
+    }
+
+    env which systemctl &>/dev/null && {
+      SYSTEMD_PAGER=
+      export SYSTEMD_PAGER
+    }
+
+    test -d "$UHOME/.terminfo" && {
+      TERMINFO="$UHOME/.terminfo"
+      export TERMINFO
+    }
+
+
+    ####################################################################
+    # vim
+    #
+
+    env which vim &>/dev/null && {
+      EDITOR="vim -u $UHOME/.vimrc"
+      VISUAL="vim -u $UHOME/.vimrc"
+      export EDITOR VISUAL
+
+      alias vi="vim -u $UHOME/.vimrc"
+      alias vim="vim -u $UHOME/.vimrc"
+    }
+
+
+    ####################################################################
     # aliases
     #
 
     alias l='/bin/ls -Al'
     alias ls='/bin/ls'
 
-    type -p vim &>/dev/null && {
-      alias vi="vim -u $UHOME/.vimrc"
-      alias vim="vim -u $UHOME/.vimrc"
-    }
-
-    type -p mysql     &>/dev/null && alias mysql='mysql -A -b -p'
-    type -p rdesktop  &>/dev/null && alias rdesktop='rdesktop -a 24 -g 1024x768 -r sound:local'
-    type -p systemctl &>/dev/null && export SYSTEMD_PAGER=
-    type -p x11vnc    &>/dev/null && alias x11vnc='x11vnc -noxrecord -rfbauth ~/.vnc/passwd'
+    env which mysql     &>/dev/null && alias mysql='mysql -A -b -p'
+    env which rdesktop  &>/dev/null && alias rdesktop='rdesktop -a 24 -g 1024x768 -r sound:local'
+    env which x11vnc    &>/dev/null && alias x11vnc='x11vnc -noxrecord -rfbauth ~/.vnc/passwd'
 
     alias cp &>/dev/null && unalias cp
     alias mv &>/dev/null && unalias mv
     alias rm &>/dev/null && unalias rm
+
 
     ####################################################################
     # options
