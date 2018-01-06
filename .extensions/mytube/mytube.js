@@ -20,6 +20,7 @@ var rules = {
   'channels': {
     'milo': true,
     'therealnews': true,
+    'talks at google': true,
   },
   'words': [
     new RegExp(/\bhomoerotic\b/i),
@@ -29,6 +30,8 @@ var rules = {
     new RegExp(/\bjason scott\b/i),
     new RegExp(/\bgungwu\b/i),
     new RegExp(/\btimothy snyder\b/i),
+    new RegExp(/\bnoam chomsky\b/i),
+    new RegExp(/\byanis varoufakis\b/i),
   ]
 };
 

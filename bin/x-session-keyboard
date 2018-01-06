@@ -3,6 +3,11 @@
 setxkbmap -model evdev -layout us
 setxkbmap -option terminate:ctrl_alt_bksp
 
+# disable terminal bell
+xset b off
+
+# correct repeat rate
 xset r rate 250 48
 
+# load keymappings
 test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
