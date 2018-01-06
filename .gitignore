@@ -3,8 +3,8 @@
 **/.perl6/
 
 # symlink excludes
-/media/
-/tmp/
+/media
+/tmp
 
 # file excludes
 /.asunder
