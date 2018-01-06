@@ -11,6 +11,7 @@
 /.config/emaildefaults
 /.config/k3brc
 /.config/knfsshare
+/.config/kwalletrc
 /.config/mimeapps.list
 /.config/pavucontrol.ini
 /.config/Trolltech.conf
