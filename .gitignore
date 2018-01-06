@@ -26,6 +26,8 @@
 /.lesshst
 /.lmmsrc.xml
 /.mongorc.js
+/.msmtp.*
+/.msmtprc
 /.mysql_history
 /.node_repl_history
 /.nvidia-settings-rc
