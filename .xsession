@@ -6,6 +6,11 @@
 test -r $HOME/.xsession-errors && > $HOME/.xsession-errors
 
 #
+# start ssh-agent
+#
+env which ssh-agent &>/dev/null && eval $(ssh-agent -s)
+
+#
 # start systemd shit
 #
 test -x /etc/X11/xinit/xinitrc.d/50-systemd-user.sh && /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
