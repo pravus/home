@@ -37,7 +37,7 @@ au FileChangedRO * set noreadonly
 
 syntax on
 "colorscheme turbo
-colorscheme muon
+silent! colorscheme muon
 
 "au FileType c      set noautoindent cindent
 "au FileType cpp    set noautoindent cindent
