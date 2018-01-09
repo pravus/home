@@ -1,0 +1,12 @@
+#!/bin/bash
+
+env which tty &>/dev/null && {
+  TTY=$(tty)
+  test "$TTY" != "not a tty" && {
+    TTYUSER=$(stat -c '%U' "$TTY")
+    test "$LOGNAME" != "$TTYUSER" && {
+      TTYHOME=$(getent passwd "$TTYUSER" | awk '{print $6}' FS=:)
+      test -r "$TTYHOME"/.bashrc && HOME="$TTYHOME" . "$TTYHOME"/.bashrc
+    }
+  }
+}

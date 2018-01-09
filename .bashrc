@@ -6,13 +6,19 @@ test "$OSTYPE" = "linux" -a -r /etc/profile && . /etc/profile
 
 
 ########################################################################
+# what is my real home?
+#
+
+UHOME=${TTYHOME:-$HOME}
+
+########################################################################
 # functions
 #
 
 path-prepend() {
   local dir
   for dir in "$@"; do
-    echo $PATH | grep "(^|:)$dir" >/dev/null 2>&1 || {
+    echo $PATH | grep -E "(^|:)$dir" >/dev/null 2>&1 || {
       test -d $dir && PATH=$dir${PATH:+:$PATH}
     }
   done
@@ -21,7 +27,7 @@ path-prepend() {
 path-append() {
   local dir
   for dir in "$@"; do
-    echo $PATH | grep "(^|:)$dir" >/dev/null 2>&1 || {
+    echo $PATH | grep -E "(^|:)$dir" >/dev/null 2>&1 || {
       test -d $dir && PATH=${PATH:+$PATH:}$dir
     }
   done
@@ -32,7 +38,7 @@ path-append() {
 # path
 #
 
-path-prepend /site/perl/bin /site/perl6/share/perl6/site/bin /site/perl6/bin /site/python/bin /site/python3/bin /site/ruby/bin /site/node/bin /site/java/bin $HOME/.local/bin $HOME/bin
+path-prepend /site/perl/bin /site/perl6/share/perl6/site/bin /site/perl6/bin /site/python/bin /site/python3/bin /site/ruby/bin /site/node/bin /site/java/bin $UHOME/.local/bin $UHOME/bin
 export PATH
 
 
@@ -79,8 +85,6 @@ case "$-" in
     ####################################################################
     # interactive environment
     #
-
-    UHOME=${TTYHOME:-$HOME}
 
     env which git &>/dev/null && {
       GIT_PAGER=
