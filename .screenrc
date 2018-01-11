@@ -1,6 +1,9 @@
-bell_msg ""
-defscrollback 9999
+# standard options
+bell_msg        ""
+defscrollback   9999
 startup_message off
-vbell off
+vbell           off
 
-termcap rxvt-* ti@:te@
+# terminal settings
+term            screen-256color
+termcap         rxvt-* ti@:te@
