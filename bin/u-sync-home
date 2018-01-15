@@ -1,0 +1,18 @@
+#!/bin/bash
+
+sources=(
+  .bashrc
+  .profile
+  .inputrc
+  .screenrc
+  .terminfo
+  .vimrc
+  .vim/colors/muon.vim
+  .vim/syntax
+  bin/u-profile
+  tmp/
+)
+
+for host in "$@"; do
+  rsync -q -aR --exclude 'tmp/*' "${sources[@]}" "${host}:"
+done
