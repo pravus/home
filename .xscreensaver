@@ -1,10 +1,10 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.36 for jhord on Tue Nov 22 14:53:09 2016.
+# Written by xscreensaver-demo 5.38 for jhord on Mon Jan  8 17:24:53 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:30:00
 cycle:		0:05:00
-lock:		False
+lock:		True
 lockTimeout:	0:00:00
 passwdTimeout:	0:00:30
 visualID:	default
@@ -268,6 +268,8 @@ programs:								      \
   GL: 				raverhoop -root				    \n\
   GL: 				splodesic -root				    \n\
   GL: 				unicrud -root				    \n\
+  GL: 				esper -root				    \n\
+  GL: 				vigilance -root				    \n\
 
 
 pointerPollTime:    0:00:05
