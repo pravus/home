@@ -13,6 +13,7 @@ sources=(
   tmp/
 )
 
+cd $HOME
 for host in "$@"; do
   rsync -q -aR --exclude 'tmp/*' "${sources[@]}" "${host}:"
 done
