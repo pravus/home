@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.38 for jhord on Mon Jan  8 17:24:53 2018.
+# Written by xscreensaver-demo 5.38 for jhord on Tue Jan 23 15:52:20 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:30:00
@@ -29,10 +29,10 @@ dpmsQuickOff:	False
 dpmsStandby:	0:30:00
 dpmsSuspend:	0:30:00
 dpmsOff:	0:30:00
-grabDesktopImages:  True
+grabDesktopImages:  False
 grabVideoFrames:    False
-chooseRandomImages: False
-imageDirectory:	
+chooseRandomImages: True
+imageDirectory:	/home/jhord/.xscreensaver-images
 
 mode:		random
 selected:	-1

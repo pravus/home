@@ -143,6 +143,7 @@ case "$-" in
     # aliases
     #
 
+    alias gre='/bin/grep --color=auto -EI'
     alias l='/bin/ls -Al'
     alias ls='/bin/ls'
 
