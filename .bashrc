@@ -10,6 +10,7 @@ test "$OSTYPE" = "linux" -a -r /etc/profile && . /etc/profile
 #
 
 UHOME=${TTYHOME:-$HOME}
+export UHOME
 
 ########################################################################
 # functions
