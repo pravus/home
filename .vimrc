@@ -1,5 +1,9 @@
 filetype plugin off
 
+if exists('$UHOME') && isdirectory($UHOME. '/.vim')
+  set runtimepath^=$UHOME/.vim
+endif
+
 set backspace=indent,eol,start
 set formatoptions=tcq
 set hlsearch

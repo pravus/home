@@ -144,6 +144,7 @@ case "$-" in
     #
 
     alias gre='/bin/grep --color=auto -EI'
+    alias grep='/bin/grep --color=auto'
     alias l='/bin/ls -Al'
     alias ls='/bin/ls'
 
