@@ -32,7 +32,7 @@ dpmsOff:	0:30:00
 grabDesktopImages:  False
 grabVideoFrames:    False
 chooseRandomImages: True
-imageDirectory:	/home/jhord/.xscreensaver-images
+imageDirectory:	/home/jhord/.xscreensaver.d/images
 
 mode:		random
 selected:	-1

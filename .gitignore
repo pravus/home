@@ -57,6 +57,7 @@
 /.config/easytag/
 /.config/enchant/
 /.config/ephoto/
+/.config/gcloud/
 /.config/google-chrome/
 /.config/gtk-2.0/
 /.config/gtk-3.0/
@@ -68,12 +69,14 @@
 /.config/phototonic/
 /.config/pulse/
 /.config/VirtualBox/
+/.config/wireshark/
 /.config/xfe/
 /.gem/
 /.gimp-2.8/
 /.gnome/
 /.gnupg/
 /.gphoto/
+/.gsutil/
 /.hg/
 /.icons/
 /.java/
@@ -83,6 +86,7 @@
 /.macromedia/
 /.minetest/
 /.mozilla/
+/.xscreensaver.d/
 /.nagstamon/
 /.nestopia/
 /.nestopia/
