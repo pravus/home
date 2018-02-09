@@ -9,7 +9,7 @@ test "$OSTYPE" = "linux" -a -r /etc/profile && . /etc/profile
 # what is my real home?
 #
 
-UHOME=${TTYHOME:-$HOME}
+UHOME=${TTY_HOME:-$HOME}
 export UHOME
 
 ########################################################################

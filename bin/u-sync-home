@@ -4,16 +4,17 @@ sources=(
   .bashrc
   .profile
   .inputrc
+  .ptsrc
   .screenrc
   .terminfo
   .vimrc
   .vim/colors/muon.vim
   .vim/syntax
-  bin/u-profile
+  bin/
   tmp/
 )
 
 cd $HOME
 for host in "$@"; do
-  rsync -q -aR --exclude 'tmp/*' "${sources[@]}" "${host}:"
+  rsync -q -aR --exclude 'bin/*' --exclude 'tmp/*' "${sources[@]}" "${host}:"
 done
