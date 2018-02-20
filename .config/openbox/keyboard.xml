@@ -80,6 +80,12 @@
       <desktop>4</desktop>
     </action>
   </keybind>
+  <keybind key="W-Prior">
+    <action name="DesktopPrevious"/>
+  </keybind>
+  <keybind key="W-Next">
+    <action name="DesktopNext"/>
+  </keybind>
   <keybind key="W-d">
     <action name="ToggleShowDesktop"/>
   </keybind>
