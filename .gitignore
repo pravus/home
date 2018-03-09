@@ -46,11 +46,13 @@
 /bin/wlog
 
 # directory excludes
+/.389-console/
 /.adobe/
 /.audacity-data/
 /.bundle/
 /.cache/
 /.config/audacious/
+/.config/autostart/
 /.config/Code Industry/
 /.config/configstore/
 /.config/dconf/
@@ -66,11 +68,15 @@
 /.config/libfm/
 /.config/libreoffice/
 /.config/menus/
+/.config/netcitadel.com/
 /.config/phototonic/
 /.config/pulse/
 /.config/VirtualBox/
 /.config/wireshark/
 /.config/xfe/
+/.docker/
+/.dropbox-dist/
+/.dropbox/
 /.gem/
 /.gimp-2.8/
 /.gnome/
@@ -79,6 +85,7 @@
 /.gsutil/
 /.hg/
 /.icons/
+/.irssi/
 /.java/
 /.kde4/
 /.links/
@@ -101,6 +108,8 @@
 /.thumbnails/
 /.vagrant.d/
 /builds/
+/doc/
+/go/
 /Maildir/
 /media/
 /node_modules/
