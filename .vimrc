@@ -66,3 +66,4 @@ nnoremap <F9>  :syntax sync fromstart<CR>
 nnoremap <F12> :set autoindent!<CR>
 inoremap <F12> <ESC>:set autoindent!<CR>i
 nnoremap <CR>  :noh<CR>
+map      q:    <NOP>

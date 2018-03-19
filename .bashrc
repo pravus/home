@@ -92,6 +92,11 @@ case "$-" in
       export GIT_PAGER
     }
 
+    env which go &>/dev/null && {
+      GOPATH=$UHOME/src/go
+      export GOPATH
+    }
+
     test -r $UHOME/.inputrc && {
       INPUTRC=$UHOME/.inputrc
       export INPUTRC
