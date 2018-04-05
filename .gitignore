@@ -70,13 +70,16 @@
 /.config/menus/
 /.config/netcitadel.com/
 /.config/phototonic/
+/.config/psi/
 /.config/pulse/
+/.config/Swift/
 /.config/VirtualBox/
 /.config/wireshark/
 /.config/xfe/
 /.docker/
 /.dropbox-dist/
 /.dropbox/
+/.fltk/
 /.gem/
 /.gimp-2.8/
 /.gnome/
@@ -103,6 +106,7 @@
 /.oracle_jre_usage/
 /.pki/
 /.purple/
+/.Spark/
 /.ssh/
 /.tor-browser-en/
 /.thumbnails/
