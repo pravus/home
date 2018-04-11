@@ -7,3 +7,5 @@
 	ci = commit
 	co = checkout
 	s = status
+[color]
+	ui = on

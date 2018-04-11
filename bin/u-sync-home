@@ -2,6 +2,7 @@
 
 sources=(
   .bashrc
+  .gitconfig
   .profile
   .inputrc
   .ptsrc
