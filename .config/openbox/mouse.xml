@@ -24,6 +24,12 @@
       <action name="Lower"/>
       <action name="FocusToBottom"/>
     </mousebind>
+    <mousebind button="A-Up" action="Press">
+      <action name="DesktopPrevious"/>
+    </mousebind>
+    <mousebind button="A-Down" action="Press">
+      <action name="DesktopNext"/>
+    </mousebind>
   </context>
   <context name="Titlebar">
     <mousebind button="Left" action="Press">
