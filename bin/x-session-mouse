@@ -1,5 +1,5 @@
 #!/bin/bash
 
-xsetroot -cursor X_cursor
+xsetroot -cursor_name X_cursor
 
 xinput --disable 'SynPS/2 Synaptics TouchPad'
