@@ -42,3 +42,5 @@ urxvt.font: xft:Misc Fixed
 !urxvt.font: xft:VGA
 !urxvt.font: xft:Hack
 !urxvt.font: 9x15
+
+urxvt.cutchars: ()*,<>[]{}|`""''
