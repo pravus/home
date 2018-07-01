@@ -1,6 +1,9 @@
 #!/bin/bash
 
+test -x $HOME/bin/unit && UNIT="$HOME/bin/unit -v --"
+
 env which pulseaudio   &>/dev/null && pulseaudio --start
-env which xscreensaver &>/dev/null && xscreensaver -no-splash &
+env which xscreensaver &>/dev/null && $UNIT xscreensaver -no-splash >> $HOME/.unit-xscreensaver.log 2>&1 &
 env which nagstamon    &>/dev/null && nagstamon &
 env which conky        &>/dev/null && conky -d
+
