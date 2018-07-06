@@ -1,5 +1,9 @@
 filetype plugin off
 
+if isdirectory('/usr/share/vim/local')
+  set runtimepath^=/usr/share/vim/local
+endif
+
 if exists('$UHOME') && isdirectory($UHOME. '/.vim')
   set runtimepath^=$UHOME/.vim
 endif
