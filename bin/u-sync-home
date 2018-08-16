@@ -17,5 +17,5 @@ sources=(
 
 cd $HOME
 for host in "$@"; do
-  rsync -q -aR --exclude 'bin/*' --exclude 'tmp/*' "${sources[@]}" "${host}:"
+  rsync -q -@0 -aR --exclude 'bin/*' --exclude 'tmp/*' "${sources[@]}" "${host}:"
 done

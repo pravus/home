@@ -43,6 +43,7 @@
 /.wget-hsts
 /.Xauthority
 /.xsession-errors
+/bin/unit
 /bin/wlog
 
 # directory excludes
@@ -60,6 +61,7 @@
 /.config/enchant/
 /.config/ephoto/
 /.config/gcloud/
+/.config/GIMP/
 /.config/google-chrome/
 /.config/gtk-2.0/
 /.config/gtk-3.0/
@@ -91,6 +93,7 @@
 /.irssi/
 /.java/
 /.kde4/
+/.kube/
 /.links/
 /.local/
 /.macromedia/

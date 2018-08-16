@@ -9,3 +9,5 @@
 	s = status
 [color]
 	ui = on
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
