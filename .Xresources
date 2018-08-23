@@ -5,7 +5,7 @@
 ! options
 urxvt.borderLess:        false
 urxvt.cursorBlink:       false
-urxvt.fading:            50
+urxvt.fading:            25
 urxvt.internalBorder:    0
 urxvt.jumpScroll:        true
 urxvt.letterSpace:       -1
