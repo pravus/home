@@ -38,9 +38,9 @@ urxvt.color14:    #55ffff
 urxvt.color15:    #ffffff 
 
 ! font configuration
-urxvt.font: xft:Misc Fixed
+!urxvt.font: xft:Misc Fixed
 !urxvt.font: xft:VGA
 !urxvt.font: xft:Hack
-!urxvt.font: 9x15
+urxvt.font: 9x15
 
 urxvt.cutchars: =()*,<>[]{}|`""''
