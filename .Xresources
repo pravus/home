@@ -1,10 +1,13 @@
-!################################
+!#######################################################################
 ! urxvt configuration
-!################################
+!#######################################################################
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! options
+
 urxvt.borderLess:        false
 urxvt.cursorBlink:       false
+urxvt.cutchars:          =()*,<>[]{}|`""''
 urxvt.fading:            25
 urxvt.internalBorder:    0
 urxvt.jumpScroll:        true
@@ -16,7 +19,9 @@ urxvt.scrollTtyKeypress: true
 urxvt.scrollTtyOutput:   false
 urxvt.scrollWithBuffer:  true
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! color configuration
+
 !urxvt.background: #0000aa
 urxvt.background: #1C1C1C
 urxvt.foreground: #ffffff
@@ -37,10 +42,25 @@ urxvt.color13:    #ff55ff
 urxvt.color14:    #55ffff
 urxvt.color15:    #ffffff 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! extension configuration
+
+urxvt.perl-ext-common: font-cycle
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! font configuration
+
+! default font
+urxvt.font: 8x13
 !urxvt.font: xft:Misc Fixed
 !urxvt.font: xft:VGA
 !urxvt.font: xft:Hack
-urxvt.font: 9x15
+!urxvt.font: 9x15
 
-urxvt.cutchars: =()*,<>[]{}|`""''
+! font-cycle key bindings
+urxvt.font-cycle.accelerator: C
+
+! font-cycle font list
+urxvt.font-cycle.font.0: 8x13
+urxvt.font-cycle.font.1: 9x15
+urxvt.font-cycle.font.2: 10x20
