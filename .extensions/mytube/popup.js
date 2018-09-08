@@ -27,8 +27,11 @@ function on_tab_click(e) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('loaded');
   var tabs = document.querySelectorAll('nav ul li');
   for(var i = 0, l = tabs.length; i < l; i++) {
     tabs[i].addEventListener('click', on_tab_click);
   }
 });
+
+console.log('we are in main()');

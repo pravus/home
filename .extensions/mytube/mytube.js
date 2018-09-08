@@ -16,12 +16,16 @@ var units = [
 var rules = {
   'badges': {
     'live-now': true,
+    'red':      true,
   },
   'channels': {
     'milo': true,
     'therealnews': true,
     'talks at google': true,
   },
+  'exclude': [
+   'Sea-EagleCAM4',
+  ],
   'words': [
     new RegExp(/\bhomoerotic\b/i),
     new RegExp(/\bhurstwic\b/i),
@@ -32,7 +36,7 @@ var rules = {
     new RegExp(/\btimothy snyder\b/i),
     new RegExp(/\bnoam chomsky\b/i),
     new RegExp(/\byanis varoufakis\b/i),
-  ]
+  ],
 };
 
 function _hide(node) {
@@ -43,6 +47,15 @@ function _hide(node) {
   node.style.right      = '0px';
   node.style.bottom     = '0px';
   //node.parentNode.removeChild(node);
+}
+
+function _exclude(name) {
+  for(var i = 0, l = rules.exclude.length; i < l; i++) {
+    if(channel === rules.exclude[i]) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function _channel(name) {
@@ -82,6 +95,9 @@ function inspect(node) {
     'div#byline-container a',
     'div#byline-container yt-formatted-string',
   ]);
+  if(_exclude(channel)) {
+    return;
+  }
   if(_channel(channel)) {
     _hide(node);
     return;

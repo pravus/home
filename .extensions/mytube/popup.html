@@ -9,34 +9,28 @@
         min-width:   320px;
       }
 
-      nav {
-        height:  320px;
-        width:   320px;
-        margin:  0px;
-        padding: 0px;
-
-        background: #cfc;
-        border: 1px solid #3f3;
-      }
-
       nav ul {
-        display: block;
-        margin:  0px;
-        padding: 0px;
+        display:         flex;
+        justify-content: flex-start;
+        list-style:      none;
+        border-bottom:   1px solid #000;
       }
 
       nav ul li {
-        display:    inline-block;
-        list-style: none;
-        margin:     0px;
-        padding:    0px;
-        /* width: 64px; */
-        width:      20%;
-        cursor:     pointer;
+        background:    #ccc;
+        border-top:    1px solid #000;
+        border-right:  1px solid #000;
+        border-left:   1px solid #000;
+        border-radius: 5px 5px 0px 0px;
+        margin-left:   0.25em;
+        margin-right:  0.25em;
+        padding-left:  0.25em;
+        padding-right: 0.25em;
+        cursor:        pointer;
       }
 
       nav ul li.open {
-        font-weight: bold;
+        background: #cfc;
       }
     </style>
     <script src="popup.js"></script>
@@ -44,13 +38,14 @@
   <body>
     <nav>
       <ul>
-        <li id="options">Options</li>
-        <li id="channels">Channels</li>
-        <li id="about" class="open">About</li>
+        <li class="options">Options</li>
+        <li class="channels">Channels</li>
+        <li class="about open">About</li>
       </ul>
     </nav>
-    <main>
-    </main>
+    <main></main>
+    <script>
+      console.log('here');
+    </script>
   </body>
 </html>
-
