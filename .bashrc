@@ -154,6 +154,7 @@ case "$-" in
     alias l='/bin/ls -Al'
     alias ls='/bin/ls'
 
+    env which diff      &>/dev/null && alias diff='diff --color=auto'
     env which mysql     &>/dev/null && {
       if [[ "$HOSTNAME" == *-cdr-* || "$HOSTNAME" == *-db-* || "$HOSTNAME" == *-vm-* ]]; then
         alias mysql='mysql -A -b'
