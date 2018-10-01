@@ -1,7 +1,7 @@
 #!/bin/bash
 
 env which xscreensaver &>/dev/null && xscreensaver -no-splash &
-env which pulseaudio   &>/dev/null && pulseaudio --start
+#env which pulseaudio   &>/dev/null && pulseaudio --start
 env which nagstamon    &>/dev/null && nagstamon &
 env which conky        &>/dev/null && conky -d
 

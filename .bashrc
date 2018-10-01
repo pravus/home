@@ -95,6 +95,8 @@ case "$-" in
     env which go &>/dev/null && {
       GOPATH=$UHOME/src/go
       export GOPATH
+
+      path-prepend $GOPATH/bin
     }
 
     test -r $UHOME/.inputrc && {
