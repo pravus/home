@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /home/jhord/.gitignore
 [alias]
+	b = branch
 	ci = commit
 	co = checkout
 	s = status

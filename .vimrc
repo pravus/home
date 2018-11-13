@@ -49,10 +49,30 @@ augroup END
 " filetype detection hints
 augroup set_filetype
   au!
-  au BufNewFile,BufRead extensions.conf setf asterisk
-  au BufNewFile,BufRead *.pc            setf c
-  au BufNewFile,BufRead *.psgi          setf perl
-  au BufNewFile,BufRead *.p6sgi         setf perl6
+  au BufNewFile,BufRead *.pc    setf c
+  au BufNewFile,BufRead *.psgi  setf perl
+  au BufNewFile,BufRead *.p6sgi setf perl6
+augroup END
+
+augroup set_filetype_fluentstream
+  au!
+  au BufNewFile,BufRead asterisk.conf                        setf asterisk
+  au BufNewFile,BufRead extconfig.conf                       setf asterisk
+  au BufNewFile,BufRead extensions.conf                      setf asterisk
+  au BufNewFile,BufRead fc_feature_codes.conf                setf asterisk
+  au BufNewFile,BufRead fc_globals.conf                      setf asterisk
+  au BufNewFile,BufRead fluentcloud_infrastructure_aors.conf setf asterisk
+  au BufNewFile,BufRead fluentcloud_infrastructure.conf      setf asterisk
+  au BufNewFile,BufRead func_odbc.conf                       setf asterisk
+  au BufNewFile,BufRead manager.conf                         setf asterisk
+  au BufNewFile,BufRead modules.conf                         setf asterisk
+  au BufNewFile,BufRead musiconhold.conf                     setf asterisk
+  au BufNewFile,BufRead pjsip.conf                           setf asterisk
+  au BufNewFile,BufRead pjsip_notify.conf                    setf asterisk
+  au BufNewFile,BufRead res_odbc.conf                        setf asterisk
+  au BufNewFile,BufRead rtp.conf                             setf asterisk
+  au BufNewFile,BufRead sorcery.conf                         setf asterisk
+  au BufNewFile,BufRead voicemail.conf                       setf asterisk
 augroup END
 
 " filetype options
