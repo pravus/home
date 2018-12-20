@@ -1,0 +1,10 @@
+#!/bin/bash
+
+test -z "$*" && {
+    echo "usage: $0 FILE [...]"
+    exit 1
+}
+
+. $HOME/lib/fluentstream/asterisk-convert-files.sh
+
+asterisk_convert_files "g722" "$@"

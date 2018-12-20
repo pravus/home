@@ -1,0 +1,16 @@
+#!/bin/bash
+
+test -z "$*" && {
+  echo "usage: $0 FILE [...]"
+  exit 1
+}
+
+$HOME/bin/sox-wav-to-alaw         "$@"
+$HOME/bin/ffmpeg-wav-to-g722      "$@"
+$HOME/bin/asterisk-wav-to-g729    "$@"
+$HOME/bin/sox-wav-to-gsm          "$@"
+$HOME/bin/asterisk-wav-to-siren14 "$@"
+$HOME/bin/asterisk-wav-to-siren7  "$@"
+$HOME/bin/sox-wav-to-sln16        "$@"
+$HOME/bin/sox-wav-to-ulaw         "$@"
+$HOME/bin/sox-wav-to-8k           "$@"
