@@ -54,7 +54,7 @@ augroup set_filetype
   au BufNewFile,BufRead *.p6sgi setf perl6
 augroup END
 
-augroup set_filetype_fluentstream
+augroup fluentstream
   au!
   au BufNewFile,BufRead asterisk.conf                        setf asterisk
   au BufNewFile,BufRead extconfig.conf                       setf asterisk
@@ -73,6 +73,7 @@ augroup set_filetype_fluentstream
   au BufNewFile,BufRead rtp.conf                             setf asterisk
   au BufNewFile,BufRead sorcery.conf                         setf asterisk
   au BufNewFile,BufRead voicemail.conf                       setf asterisk
+  au BufNewFile,BufRead C-[0-9a-f]*                          setf asterisk
 augroup END
 
 " filetype options

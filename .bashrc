@@ -158,11 +158,7 @@ case "$-" in
 
     env which diff      &>/dev/null && alias diff='diff --color=auto'
     env which mysql     &>/dev/null && {
-      if [[ "$HOSTNAME" == *-cdr-* || "$HOSTNAME" == *-db-* || "$HOSTNAME" == *-vm-* ]]; then
-        alias mysql='mysql -A -b'
-      else
-        alias mysql='mysql -A -b -p'
-      fi
+      alias mysql='mysql -A -b'
     }
     env which rdesktop  &>/dev/null && alias rdesktop='rdesktop -a 24 -g 1024x768 -r sound:local'
     env which x11vnc    &>/dev/null && alias x11vnc='x11vnc -noxrecord -rfbauth ~/.vnc/passwd'
