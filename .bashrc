@@ -42,6 +42,10 @@ path-append() {
 path-prepend /site/perl/bin /site/perl6/share/perl6/site/bin /site/perl6/bin /site/python/bin /site/python3/bin /site/ruby/bin /site/node/bin /site/java/bin $UHOME/.local/bin $UHOME/bin
 export PATH
 
+test "$USER" == "vagrant" && {
+  path-prepend /home/vagrant/.nvm/versions/node/v8.1.2/bin
+}
+
 
 ########################################################################
 # environment settings
