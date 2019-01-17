@@ -101,6 +101,12 @@ if version >= 700
   augroup END
 endif
 
+" disable E173 with multiple buffers
+if argc() > 1
+  silent blast
+  silent bfirst
+endif
+
 " syntax highlighting
 syntax on
 "silent! colorscheme turbo
