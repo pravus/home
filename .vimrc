@@ -74,6 +74,7 @@ augroup fluentstream
   au BufNewFile,BufRead sorcery.conf                         setf asterisk
   au BufNewFile,BufRead voicemail.conf                       setf asterisk
   au BufNewFile,BufRead C-[0-9a-f]*                          setf asterisk
+  au BufNewFile,BufRead *.fs                                 setf php
 augroup END
 
 " filetype options
