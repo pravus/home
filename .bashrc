@@ -140,7 +140,7 @@ case "$-" in
     # ssh-agent
     #
 
-    test -x "$HOME/bin/wrap-ssh-agent" && "$HOME/bin/wrap-ssh-agent"
+    test -x "$HOME/bin/wrap-ssh-agent" && eval "$("$HOME/bin/wrap-ssh-agent")"
 
 
     ####################################################################

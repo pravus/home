@@ -20,6 +20,7 @@ if [[ -f "$ssh_agent_env" ]]; then
   . "$ssh_agent_env"
   if agent_env_is_valid; then
     #echo "ssh-agent env loaded"
+    cat "$ssh_agent_env"
     exit 0
   fi
 fi
@@ -37,3 +38,5 @@ export SSH_AUTH_SOCK
 SSH_AGENT_PID=${SSH_AGENT_PID}
 export SSH_AGENT_PID
 EOT
+
+cat "$ssh_agent_env"
