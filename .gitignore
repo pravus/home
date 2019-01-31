@@ -81,6 +81,7 @@
 /.docker/
 /.dropbox-dist/
 /.dropbox/
+/.electron/
 /.fltk/
 /.gem/
 /.gimp-2.8/
