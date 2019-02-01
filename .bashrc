@@ -140,10 +140,10 @@ case "$-" in
     # ssh-agent
     #
 
-    test -z "${TTY_HOME}" && \
-      "$HOME/bin/wrap-ssh-agent" && \
-        . "$HOME/.ssh/ssh-agent.env"
-
+    test -x "$HOME/bin/wrap-ssh-agent" \
+      && test -z "${TTY_HOME}" \
+      && "$HOME/bin/wrap-ssh-agent" \
+      && . "$HOME/.ssh/ssh-agent.env"
 
     ####################################################################
     # vim
