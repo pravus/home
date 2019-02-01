@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh_agent_env="$HOME/.local/var/ssh-agent.env"
+ssh_agent_env="$HOME/.ssh/ssh-agent.env"
 
 function agent_env_is_valid() {
   if [[ -n "$SSH_AGENT_PID" && -n "$SSH_AUTH_SOCK" ]]; then
@@ -12,23 +12,18 @@ function agent_env_is_valid() {
 
 
 if agent_env_is_valid; then
-  #echo "ssh-agent already running"
   exit 0
 fi
 
 if [[ -f "$ssh_agent_env" ]]; then
   . "$ssh_agent_env"
   if agent_env_is_valid; then
-    #echo "ssh-agent env loaded"
-    cat "$ssh_agent_env"
     exit 0
   fi
 fi
 
-#echo "starting new ssh agent"
-eval "$(ssh-agent)"
+eval "$(ssh-agent -s)" >/dev/null || exit 1
 
-mkdir -p "$(dirname ${ssh_agent_env})"
 cat <<EOT >"$ssh_agent_env"
 # !(@) ssh-agent.env
 
@@ -39,4 +34,4 @@ SSH_AGENT_PID=${SSH_AGENT_PID}
 export SSH_AGENT_PID
 EOT
 
-cat "$ssh_agent_env"
+exit 0
