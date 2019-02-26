@@ -146,6 +146,15 @@ case "$-" in
       && . "$HOME/.ssh/ssh-agent.env"
 
     ####################################################################
+    # diff
+    #
+    env which diff &>/dev/null && {
+      [[ "$(diff -v | awk '/diffutils/ {print $4}')" > "3.6" ]] && {
+        alias diff='diff --color=auto'
+      }
+    }
+
+    ####################################################################
     # vim
     #
 
@@ -168,7 +177,6 @@ case "$-" in
     alias l='/bin/ls -Al'
     alias ls='/bin/ls'
 
-    env which diff      &>/dev/null && alias diff='diff --color=auto'
     env which mysql     &>/dev/null && {
       alias mysql='mysql -A -b'
     }
