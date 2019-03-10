@@ -118,6 +118,8 @@ mapclear
 nnoremap <F1>  <NOP>
 nnoremap <F9>  :syntax sync fromstart<CR>
 nnoremap <F10> :set expandtab!<CR>
+nnoremap <F11> :set ignorecase!<CR>
+inoremap <F11> <ESC>:set ignorecase!<CR>i
 nnoremap <F12> :set autoindent!<CR>
 inoremap <F12> <ESC>:set autoindent!<CR>i
 nnoremap <CR>  :noh<CR>
