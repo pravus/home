@@ -116,6 +116,7 @@ silent! colorscheme muon
 " keybindings
 mapclear
 nnoremap <F1>  <NOP>
+inoremap <F1>  <NOP>
 nnoremap <F9>  :syntax sync fromstart<CR>
 nnoremap <F10> :set expandtab!<CR>
 nnoremap <F11> :set ignorecase!<CR>
