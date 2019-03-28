@@ -72,6 +72,7 @@ augroup fluentstream
   au BufNewFile,BufRead res_odbc.conf                        setf asterisk
   au BufNewFile,BufRead rtp.conf                             setf asterisk
   au BufNewFile,BufRead sorcery.conf                         setf asterisk
+  au BufNewFile,BufRead subscriptions.conf                   setf asterisk
   au BufNewFile,BufRead voicemail.conf                       setf asterisk
   au BufNewFile,BufRead C-[0-9a-f]*                          setf asterisk
   au BufNewFile,BufRead *.fs                                 setf php
