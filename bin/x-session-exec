@@ -3,5 +3,10 @@
 env which xscreensaver &>/dev/null && xscreensaver -no-splash &
 #env which pulseaudio   &>/dev/null && pulseaudio --start
 env which nagstamon    &>/dev/null && nagstamon &
-env which conky        &>/dev/null && conky -d
+env which conky        &>/dev/null && {
+  args="-d"
+  [[ -f $HOME/.config/conky/conky.conf.local ]] && \
+    args="$args -c $HOME/.config/conky/conky.conf.local"
+  conky $args
+}
 
