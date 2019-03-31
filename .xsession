@@ -8,7 +8,12 @@ test -r $HOME/.xsession-errors && > $HOME/.xsession-errors
 #
 # start ssh-agent
 #
-env which ssh-agent &>/dev/null && eval $(ssh-agent -s)
+env which ssh-agent &>/dev/null && {
+  test -x "$HOME/bin/wrap-ssh-agent" \
+    && "$HOME/bin/wrap-ssh-agent" \
+    && . "$HOME/.ssh/ssh-agent.env"
+}
+
 
 #
 # start systemd shit
