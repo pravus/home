@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if test -n "$SSH_AGENT_PID" -a -n "$SSH_AUTH_SOCK" -a -S "$SSH_AUTH_SOCK"; then
-  SSH_ASKPASS=$(env which qt4-ssh-askpass 2>/dev/null)
-  test -s "$SSH_ASKPASS" && export SSH_ASKPASS
-
-  ssh-add
-fi

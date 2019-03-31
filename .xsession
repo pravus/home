@@ -52,11 +52,6 @@ test -x $HOME/bin/x-session-wallpaper && $HOME/bin/x-session-wallpaper
 test -x $HOME/bin/x-session-exec && $HOME/bin/x-session-exec
 
 #
-# set up ssh agent
-#
-test -x $HOME/bin/x-session-ssh && $HOME/bin/x-session-ssh
-
-#
 # window manager
 #
 exec openbox

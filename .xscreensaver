@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.40 for jhord on Wed Sep 19 16:14:39 2018.
+# Written by xscreensaver-demo 5.42 for jhord on Sun Mar 31 10:52:26 2019.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:30:00
@@ -277,6 +277,7 @@ programs:								      \
 				filmleader -root			    \n\
 				glitchpeg -root				    \n\
 				vfeedback -root				    \n\
+  GL: 				handsy -root				    \n\
 
 
 pointerPollTime:    0:00:05
