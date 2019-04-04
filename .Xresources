@@ -8,7 +8,7 @@
 urxvt.borderLess:        false
 urxvt.cursorBlink:       false
 urxvt.cutchars:          =()*,<>[]{}|`""''
-urxvt.fading:            25
+urxvt.fading:            15
 urxvt.internalBorder:    0
 urxvt.jumpScroll:        true
 urxvt.letterSpace:       -1
@@ -22,9 +22,15 @@ urxvt.scrollWithBuffer:  true
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! color configuration
 
+! dark background
 !urxvt.background: #0000aa
-urxvt.background: #1C1C1C
-urxvt.foreground: #ffffff
+!urxvt.background: #1C1C1C
+!urxvt.foreground: #ffffff
+
+urxvt.background: #ffffff
+urxvt.foreground: #7f7f7f
+
+! spec ANSI
 urxvt.color0:     #000000
 urxvt.color1:     #aa0000
 urxvt.color2:     #00aa00
