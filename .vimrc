@@ -28,6 +28,7 @@ set nowrap
 set ruler
 set shiftwidth=2
 set softtabstop=0
+set t_Co=256
 set t_vb=
 set tabstop=2
 set vb
@@ -109,10 +110,12 @@ if argc() > 1
   silent bfirst
 endif
 
+set background=light
+
 " syntax highlighting
 syntax on
 "silent! colorscheme turbo
-silent! colorscheme muon
+silent! colorscheme pyte
 
 " keybindings
 mapclear
