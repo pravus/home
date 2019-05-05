@@ -6,15 +6,7 @@ use warnings;
 main();
 
 sub main {
-  if(1) {
-    open my $fh, '>', '/tmp/x.env'
-      or die "open: $!\n";
-    for my $name (keys %ENV) {
-      print {$fh} "$name = $ENV{$name}\n";
-    }
-    close $fh;
-  }
-  system('xscreensaver -no-splash -verbose &>/tmp/xss.out &');
+  system('xscreensaver -no-splash &');
   sleep(1);
   system('xscreensaver-command -activate');
   my $pid = open my $xc, '-|', 'xscreensaver-command', '-watch'
