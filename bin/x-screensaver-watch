@@ -1,0 +1,28 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+main();
+
+sub main {
+  if(1) {
+    open my $fh, '>', '/tmp/x.env'
+      or die "open: $!\n";
+    for my $name (keys %ENV) {
+      print {$fh} "$name = $ENV{$name}\n";
+    }
+    close $fh;
+  }
+  system('xscreensaver -no-splash -verbose &>/tmp/xss.out &');
+  sleep(1);
+  system('xscreensaver-command -activate');
+  my $pid = open my $xc, '-|', 'xscreensaver-command', '-watch'
+    or die "xscreensaver-command: open: $!\n";
+  while(my $line = <$xc>) {
+    kill 'TERM', $pid
+      if substr($line, 0, 7) eq 'UNBLANK';
+  }
+  close $xc;
+  system('xscreensaver-command -exit')
+}

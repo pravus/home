@@ -55,7 +55,7 @@
     </keybind>
     <keybind key="z">
       <action name="Execute">
-        <execute>xscreensaver-command -activate</execute>
+        <execute>x-screensaver-watch</execute>
       </action>
     </keybind>
   </keybind>
@@ -147,7 +147,7 @@
   </keybind>
   <keybind key="W-z">
     <action name="Execute">
-      <execute>xscreensaver-command -activate</execute>
+      <execute>x-screensaver-watch</execute>
     </action>
   </keybind>
 </keyboard>
