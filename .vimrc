@@ -69,6 +69,7 @@ augroup fluentstream
   au BufNewFile,BufRead modules.conf                         setf asterisk
   au BufNewFile,BufRead musiconhold.conf                     setf asterisk
   au BufNewFile,BufRead pjsip.conf                           setf asterisk
+  au BufNewFile,BufRead pjsip-transports.conf                setf asterisk
   au BufNewFile,BufRead pjsip_notify.conf                    setf asterisk
   au BufNewFile,BufRead res_odbc.conf                        setf asterisk
   au BufNewFile,BufRead rtp.conf                             setf asterisk
