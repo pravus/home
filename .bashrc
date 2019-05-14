@@ -197,6 +197,17 @@ case "$-" in
 
     # of the gods
     set -o vi
+
+
+    ####################################################################
+    # local
+    #
+
+    test -n "$(ls -A $UHOME/.local/profile.d 2>/dev/null)" && {
+      for source in $UHOME/.local/profile.d/*; do
+        . $source
+      done
+    }
   ;;
 esac
 
