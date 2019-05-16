@@ -111,12 +111,13 @@ if argc() > 1
   silent bfirst
 endif
 
-set background=light
+"set background=light
 
 " syntax highlighting
 syntax on
+silent! colorscheme muon
+"silent! colorscheme pyte
 "silent! colorscheme turbo
-silent! colorscheme pyte
 
 " keybindings
 mapclear

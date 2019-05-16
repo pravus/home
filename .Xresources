@@ -22,13 +22,17 @@ urxvt.scrollWithBuffer:  true
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! color configuration
 
-! dark background
-!urxvt.background: #0000aa
+! white/blue
+urxvt.background: #0000aa
+urxvt.foreground: #ffffff
+
+! white/gray
 !urxvt.background: #1C1C1C
 !urxvt.foreground: #ffffff
 
-urxvt.background: #ffffff
-urxvt.foreground: #7f7f7f
+! gray/white
+!urxvt.background: #ffffff
+!urxvt.foreground: #7f7f7f
 
 ! spec ANSI
 urxvt.color0:     #000000
