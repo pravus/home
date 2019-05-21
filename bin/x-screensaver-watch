@@ -6,6 +6,12 @@ use warnings;
 main();
 
 sub main {
+  my $name = $ENV{HOME} .'/.xscreensaver.d/watch';
+  if(! -e $name) {
+    system('xscreensaver-command -activate');
+    exit(0);
+  }
+
   system('xscreensaver -no-splash &');
   sleep(1);
   system('xscreensaver-command -activate');
