@@ -13,10 +13,9 @@ LOGFILE=/home/jhord/.procmail.log
    ^From:.*<vinylspecialist@vinylspecialist.de>\
   |^From:.*<webmaster@m109riders.com>\
   |^From:.*<support.m109riders@gmail.com>\
-  |^From:.*Canadiana Pharmacy\
-  |^From:.*Online Pharmacy\
   |^From:.*Pharmacy\
   |^From:.*"Microsoft Outlook"\
+  |^Subject: nihil .* satan666
   )
 /dev/null
 

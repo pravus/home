@@ -1,0 +1,17 @@
+#!/bin/bash
+
+files=$(find /etc -name '*.pacnew' 2>/dev/null)
+[[ -z "$files" ]] && {
+  echo "nothing to do..."
+  exit 1
+}
+
+for file in $files; do
+  rel=$(echo "$file" | sed -e 's#^/##' -e 's#\.pacnew$##')
+  dir=$(dirname "$rel")
+  [[ "$dir" != "." ]] && {
+    mkdir -p "$dir" || continue
+  }
+  echo "[$file] -> [$rel]"
+  cp "$file" "$rel"
+done
