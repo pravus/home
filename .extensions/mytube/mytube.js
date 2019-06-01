@@ -15,64 +15,142 @@ var units = [
 
 var rules = {
   'badges': {
-    'live-now': true,
-    'red':      true,
+    'live-now':        true,
+    'red':             true,
+    'verified-artist': true,
   },
   'channels': {
     '7clouds': true,
     '92y plus': true,
+    'aborn79': true,
+    'absolute science': true,
     'acb': true,
+    'al jazeera english': true,
+    'alsidre': true,
+    'alexander bus': true,
+    'alysha friedly': true,
+    'adapt 2030': true,
     'amazing tech facts': true,
+    'anton petrov': true,
     'at&t tech channel': true,
     'autoexpert tv': true,
     'autoportal': true,
+    'ave': true,
+    'big island video news': true,
+    'billie eilish': true,
     'bryan lunduke': true,
     'butters the bean': true,
+    'capitan black': true,
     'cardi b': true,
+    'cars guide': true,
+    'caseyneistat': true,
     'cbc news': true,
+    'cbc this morning': true,
+    'central perk': true,
     'chrisbrowntv': true,
     'chariotsolutions': true,
+    'cody\'slab': true,
+    'collegehumor': true,
+    'country cast': true,
+    'crashcourse': true,
+    'ctrl shift face': true,
+    'daily mail': true,
+    'daily tuition': true,
     'dave volsky': true,
+    'dang bao thuy': true,
+    'debunkified': true,
     'depeche mode': true,
     'ed sheeran': true,
-    'fall university': true,
+    'fail university': true,
+    'falconmasters': true,
+    'flutter': true,
     'freecodecamp.org': true,
+    'frontline pbs | official': true,
     'gabriel iglesias': true,
     'game design hqx': true,
+    'graves gatekeepr': true,
+    'good morning america': true,
+    'haltomapush': true,
+    'hollywood undead': true,
+    'i build it - diy tips and tricks': true,
     'impulse': true,
+    'jabrils': true,
+    'james bay': true,
     'jerry skinner': true,
     'jimmy kimmel live': true,
+    'johnny cortes & los twins': true,
     'joe scott': true,
+    'jre clips': true,
     'ken tamplin vocal academy': true,
+    'kelley blue book': true,
     'kids animal family': true,
     'maluma': true,
+    'mayuko': true,
+    'motionless in white': true,
+    'mysterious middle east': true,
+    'naked science': true,
+    'nbc sports': true,
+    'nilered': true,
     'lastweektonight': true,
+    'late night with seth meyers': true,
     'lol network': true,
     'lil nas x': true,
+    'laura sánchez': true,
+    'lex fridman': true,
     'linux tex': true,
+    'lumnah acres': true,
     'marques brownlee': true,
     'mayim bialik': true,
+    'mark wiens': true,
+    'matthew lacroix': true,
+    'michael jamison': true,
     'milo': true,
     'next of ken': true,
+    'out of the woods': true,
     'overtime': true,
+    'paul beckwith': true,
     'pbs eons': true,
+    'pdrivetv': true,
+    'pickup truck plus suv talk': true,
+    'planeta tierra': true,
+    'plini': true,
+    'powerful message': true,
     'priyanka chopra': true,
+    'raptor': true,
+    'redline reviews': true,
+    'rumble viral': true,
     'russell brand': true,
+    'russia insight': true,
+    'saturday night live': true,
     'seso': true,
     'slipknot': true,
+    'south china morning post': true,
+    'startyourenginesx': true,
     'talks at google': true,
     'techlead': true,
-    'therealnews': true,
-    'tracks': true,
+    'ted-ed': true,
+    'the coding train': true,
     'the fast lane car': true,
+    'the fighter and the kid': true,
     'the late show with stephen colbert': true,
     'the slow mo guys': true,
+    'the why': true,
+    'thoughty2': true,
+    'theellenshow': true,
+    'therealnews': true,
+    'today': true,
+    'today i found out': true,
+    'tracks': true,
     'traversy media': true,
     'unbox therapy': true,
+    'unexplained mysteries': true,
+    'wicked sounds': true,
     'wings of pegasus': true,
     'uamn tv': true,
     'volbeat': true,
+    'vsauce': true,
     'web dev simplified': true,
+    'zeg tv hidden from the public': true,
   },
   'exclude': [
    'Sea-EagleCAM4',
@@ -80,19 +158,37 @@ var rules = {
   'words': [
     new RegExp(/\bbaseball\b/i),
     new RegExp(/\bbasketball\b/i),
+    new RegExp(/\bblacksmith(ing)?\b/i),
+    new RegExp(/\bbloopers\b/i),
+    new RegExp(/\bbmw\b/i),
+    new RegExp(/\bdj\b/i),
+    new RegExp(/\bextreme\b/i),
     new RegExp(/\bfootball\b/i),
+    new RegExp(/\bghost\b/i),
     new RegExp(/\bgungwu\b/i),
     new RegExp(/\bhomoerotic\b/i),
     new RegExp(/\bhurstwic\b/i),
     new RegExp(/\bjason scott\b/i),
     new RegExp(/\bkaku\b/i),
-    new RegExp(/\bmba\b/i),
+    new RegExp(/\blinus torvalds\b/i),
+    new RegExp(/\bmlb\b/i),
+    new RegExp(/\bmonster\b/i),
+    new RegExp(/\bmust have\b/i),
     new RegExp(/\bnba\b/i),
     new RegExp(/\bnfl\b/i),
     new RegExp(/\bnoam chomsky\b/i),
+    new RegExp(/\bpok.mon\b/i),
+    new RegExp(/\bsecrets\b/i),
+    new RegExp(/\bshiba\b/i),
+    new RegExp(/\bshrek\b/i),
+    new RegExp(/\bsnowman\b/i),
     new RegExp(/\bsoccer\b/i),
+    new RegExp(/\bsuper\s*bowl\b/i),
     new RegExp(/\bsurvive the jive\b/i),
     new RegExp(/\btimothy snyder\b/i),
+    new RegExp(/\bvines\b/i),
+    new RegExp(/\bviral\b/i),
+    new RegExp(/\bworld\s*series\b/i),
     new RegExp(/\byanis varoufakis\b/i),
   ],
 };
@@ -102,7 +198,7 @@ function _hide(node) {
     if(window.location.toString().endsWith('/feed/recommended')) {
       return node.parentNode.parentNode.parentNode.parentNode;
     }
-    console.log('_hide', window.location, node);
+    //console.log('_hide', window.location, node);
     return node;
   })();
 
@@ -114,7 +210,7 @@ function _hide(node) {
   root.style.bottom     = '0px';
 //  node.parentNode.removeChild(node);
 
-  console.log('hide', root);
+  //console.log('hide', root);
 }
 
 function _exclude(name) {
@@ -155,12 +251,12 @@ function inspect(node) {
   }
 
   function _badge(root, type) {
-    //console.log('badge: '+ type, root)
+    console.log('badge: '+ type, root)
     var selector = 'div.badge.badge-style-type-'+ type;
     return root.querySelector(selector) === null ? false : true;
   }
 
-  var channel  = _text(node, [
+  var channel = _text(node, [
     'div#byline-container a',
     'div#byline-container yt-formatted-string',
   ]);
@@ -176,7 +272,7 @@ function inspect(node) {
     return;
   }
 
-  var title    = _text(node, [
+  var title = _text(node, [
     'h3 a#video-title',
     'h3 span#video-title',
   ]);
@@ -186,7 +282,7 @@ function inspect(node) {
   }
 
   Object.entries(rules.badges).forEach(function (rule) {
-    if(rule[1] && _badge(node, 'live-now')) {
+    if(rule[1] && _badge(node, rule[0])) {
       _hide(node);
       return;
     }
