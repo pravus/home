@@ -19,39 +19,107 @@ var rules = {
     'red':      true,
   },
   'channels': {
+    '7clouds': true,
+    '92y plus': true,
+    'acb': true,
+    'amazing tech facts': true,
+    'at&t tech channel': true,
+    'autoexpert tv': true,
+    'autoportal': true,
+    'bryan lunduke': true,
+    'butters the bean': true,
+    'cardi b': true,
+    'cbc news': true,
+    'chrisbrowntv': true,
+    'chariotsolutions': true,
+    'dave volsky': true,
+    'depeche mode': true,
+    'ed sheeran': true,
+    'fall university': true,
+    'freecodecamp.org': true,
+    'gabriel iglesias': true,
+    'game design hqx': true,
+    'impulse': true,
+    'jerry skinner': true,
+    'jimmy kimmel live': true,
+    'joe scott': true,
+    'ken tamplin vocal academy': true,
+    'kids animal family': true,
+    'maluma': true,
+    'lastweektonight': true,
+    'lol network': true,
+    'lil nas x': true,
+    'linux tex': true,
+    'marques brownlee': true,
+    'mayim bialik': true,
     'milo': true,
-    'therealnews': true,
+    'next of ken': true,
+    'overtime': true,
+    'pbs eons': true,
+    'priyanka chopra': true,
+    'russell brand': true,
+    'seso': true,
+    'slipknot': true,
     'talks at google': true,
+    'techlead': true,
+    'therealnews': true,
+    'tracks': true,
+    'the fast lane car': true,
+    'the late show with stephen colbert': true,
+    'the slow mo guys': true,
+    'traversy media': true,
+    'unbox therapy': true,
+    'wings of pegasus': true,
+    'uamn tv': true,
+    'volbeat': true,
+    'web dev simplified': true,
   },
   'exclude': [
    'Sea-EagleCAM4',
   ],
   'words': [
+    new RegExp(/\bbaseball\b/i),
+    new RegExp(/\bbasketball\b/i),
+    new RegExp(/\bfootball\b/i),
+    new RegExp(/\bgungwu\b/i),
     new RegExp(/\bhomoerotic\b/i),
     new RegExp(/\bhurstwic\b/i),
-    new RegExp(/\bkaku\b/i),
-    new RegExp(/\bsurvive the jive\b/i),
     new RegExp(/\bjason scott\b/i),
-    new RegExp(/\bgungwu\b/i),
-    new RegExp(/\btimothy snyder\b/i),
+    new RegExp(/\bkaku\b/i),
+    new RegExp(/\bmba\b/i),
+    new RegExp(/\bnba\b/i),
+    new RegExp(/\bnfl\b/i),
     new RegExp(/\bnoam chomsky\b/i),
+    new RegExp(/\bsoccer\b/i),
+    new RegExp(/\bsurvive the jive\b/i),
+    new RegExp(/\btimothy snyder\b/i),
     new RegExp(/\byanis varoufakis\b/i),
   ],
 };
 
 function _hide(node) {
-  node.style.visibility = 'hidden';
-  node.style.position   = 'absolute';
-  node.style.left       = '0px';
-  node.style.top        = '0px';
-  node.style.right      = '0px';
-  node.style.bottom     = '0px';
-  //node.parentNode.removeChild(node);
+  let root = (function () {
+    if(window.location.toString().endsWith('/feed/recommended')) {
+      return node.parentNode.parentNode.parentNode.parentNode;
+    }
+    console.log('_hide', window.location, node);
+    return node;
+  })();
+
+  root.style.visibility = 'hidden';
+  root.style.position   = 'absolute';
+  root.style.left       = '0px';
+  root.style.top        = '0px';
+  root.style.right      = '0px';
+  root.style.bottom     = '0px';
+//  node.parentNode.removeChild(node);
+
+  console.log('hide', root);
 }
 
 function _exclude(name) {
   for(var i = 0, l = rules.exclude.length; i < l; i++) {
-    if(channel === rules.exclude[i]) {
+    if(name === rules.exclude[i]) {
       return true;
     }
   }
@@ -66,7 +134,8 @@ function _channel(name) {
 
 function _matches(text) {
   for(var i = 0, l = rules.words.length; i < l; i++) {
-    if(text.match(rules.words[i])) {
+    var matches = text.match(rules.words[i]);
+    if(matches) {
       return true;
     }
   }
@@ -86,7 +155,7 @@ function inspect(node) {
   }
 
   function _badge(root, type) {
-    console.log('badge: '+ type, root)
+    //console.log('badge: '+ type, root)
     var selector = 'div.badge.badge-style-type-'+ type;
     return root.querySelector(selector) === null ? false : true;
   }
@@ -141,13 +210,13 @@ function lace_up() {
       (function() {
         var c = root.children;
         for(var i = 0, l = c.length; i < l; i++) {
-          console.log('child: '+ c[i].tagName.toLowerCase());
+          //console.log('child: '+ c[i].tagName.toLowerCase());
         }
       })();
       new MutationObserver(function(recs) {
         recs.forEach(function(mu) {
           mu.addedNodes.forEach(function(node) {
-            console.log('mutate', node);
+            //console.log('mutate', node);
             clean(node);
           });
         });
@@ -155,7 +224,7 @@ function lace_up() {
       clean(root);
     }
     else {
-      console.log('missing sock: '+ sock);
+      //console.log('missing sock: '+ sock);
     }
   })
 }
