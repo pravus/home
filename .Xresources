@@ -7,7 +7,7 @@
 
 urxvt.borderLess:        false
 urxvt.cursorBlink:       false
-urxvt.cutchars:          =()*,<>[]{}|`""''‘’
+urxvt.cutchars:          :;=()*,<>[]{}|`""''‘’
 urxvt.fading:            15
 urxvt.internalBorder:    0
 urxvt.jumpScroll:        true
