@@ -23,6 +23,7 @@ set nobackup
 set nocp
 set noeb
 set nofoldenable
+set nomodeline
 set nowb
 set nowrap
 set ruler
