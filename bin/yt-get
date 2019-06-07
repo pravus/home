@@ -6,5 +6,6 @@
 }
 
 for url in $@; do
-  curl -X GET "http://abyss.nil:5000/?url=${url}"
+  curl -X GET "http://abyss.nil:5000/youtube-dl?url=${url}"
+  echo
 done
