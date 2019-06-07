@@ -1,0 +1,10 @@
+#!/bin/bash
+
+[[ -z "$*" ]] && {
+  echo "usage: $0 URL [...]" >&2
+  exit 1
+}
+
+for url in $@; do
+  curl -X GET "http://abyss.nil:5000/?url=${url}"
+done
