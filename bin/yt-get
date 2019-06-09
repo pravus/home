@@ -6,5 +6,6 @@
 }
 
 for url in $@; do
-  curl -s -X POST -d "$url" -o /dev/null "http://abyss.nil:4151/pub?topic=youtube-dl"
+  curl -s -X POST -d "{\"url\": \"$url\"}" -o /dev/null "http://abyss.nil:4151/pub?topic=youtube-dl"
+  #curl -s -X POST -d "{\"url\": \"$url\"}" -o /dev/null "http://abyss.nil:5000/"
 done
