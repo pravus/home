@@ -61,6 +61,7 @@
 /.config/easytag/
 /.config/enchant/
 /.config/ephoto/
+/.config/fluentcloud-live-manager/
 /.config/gcloud/
 /.config/GIMP/
 /.config/google-chrome/
@@ -78,6 +79,7 @@
 /.config/VirtualBox/
 /.config/wireshark/
 /.config/xfe/
+/.dia/
 /.docker/
 /.dropbox-dist/
 /.dropbox/

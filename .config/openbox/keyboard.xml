@@ -116,13 +116,13 @@
     </action>
   </keybind>
   <keybind key="W-k">
-    <action name="ToggleMaximizeVert"/>
+    <action name="MaximizeVert"/>
     <action name="MoveResizeTo">
       <width>932</width>
     </action>
   </keybind>
   <keybind key="W-l">
-    <action name="ToggleMaximizeHorz"/>
+    <action name="MaximizeHorz"/>
     <action name="MoveResizeTo">
       <height>668</height>
     </action>
