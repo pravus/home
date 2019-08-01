@@ -95,6 +95,49 @@
    * windows
    *
   -->
+  <keybind key="C-A-Left">
+    <action name="MoveResizeTo">
+      <width>568</width>
+    </action>
+  </keybind>
+  <keybind key="C-A-Right">
+    <action name="MoveResizeTo">
+      <width>932</width>
+    </action>
+  </keybind>
+  <keybind key="C-A-Up">
+    <action name="MoveResizeTo">
+      <height>668</height>
+    </action>
+  </keybind>
+  <keybind key="C-A-Down">
+    <action name="MoveResizeTo">
+      <height>356</height>
+    </action>
+  </keybind>
+  <keybind key="W-k">
+    <action name="ToggleMaximizeVert"/>
+    <action name="MoveResizeTo">
+      <width>932</width>
+    </action>
+  </keybind>
+  <keybind key="W-l">
+    <action name="ToggleMaximizeHorz"/>
+    <action name="MoveResizeTo">
+      <height>668</height>
+    </action>
+  </keybind>
+  <keybind key="W-n">
+    <action name="UnMaximizeHorz"/>
+    <action name="UnMaximizeVert"/>
+    <action name="MoveResizeTo">
+      <height>356</height>
+      <width>568</width>
+    </action>
+  </keybind>
+  <keybind key="W-r">
+    <action name="Resize"/>
+  </keybind>
   <keybind key="W-s">
     <action name="ToggleOmniPresent"/>
   </keybind>
