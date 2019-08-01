@@ -1,3 +1,5 @@
+OPTIONS=role:monk
+
 OPTIONS=align:neutral
 OPTIONS=autodig
 OPTIONS=noautopickup
@@ -16,5 +18,3 @@ OPTIONS=suppress_alert:3.3.1
 OPTIONS=nosparkle
 OPTIONS=time
 OPTIONS=windowtype:tty
-
-OPTIONS=role:wizard
