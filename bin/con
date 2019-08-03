@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+
+import argparse
+import operator
+import sys
+
+__COLORS__ = {
+  'black':         0,
+  'red':           1,
+  'green':         2,
+  'brown':         3,
+  'blue':          4,
+  'magenta':       5,
+  'cyan':          6,
+  'light-grey':    7,
+  'grey':          8,
+  'light-red':     9,
+  'light-green':   10,
+  'yellow':        11,
+  'light-blue':    12,
+  'light-magenta': 13,
+  'light-cyan':    14,
+  'white':         15,
+}
+
+class App:
+
+  def __init__(self):
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('-f', '--fg', type=str, metavar='COLOR',
+      help='foreground color')
+    parser.add_argument('-b', '--bg', type=str, metavar='COLOR',
+      help='background color')
+    parser.add_argument('-l', '--list', action='store_true',
+      help='list colors')
+
+    self.args = parser.parse_args()
+
+    self.fg   = 7
+    self.bg   = 0
+
+    if self.args.fg in __COLORS__:
+      self.fg = __COLORS__[self.args.fg]
+    if self.args.bg in __COLORS__:
+      self.bg = __COLORS__[self.args.bg]
+
+  def main(self):
+    if self.args.list:
+      for pair in sorted(__COLORS__.items(), key=operator.itemgetter(1)):
+        name = pair[0]
+        code = pair[1]
+        base = code
+        ansi = ''
+        if base <= 7:
+          fg_code = 30 + base
+          bg_code = 40 + base
+        else:
+          fg_code = 82 + base
+          bg_code = 92 + base
+        ansi = '{}'.format(fg_code)
+        print('\x1b[{ansi}m{code:<2d} {fg_code:<2d} {bg_code:<3d} {name}\x1b[0m'.format(
+          ansi=ansi, code=code, fg_code=fg_code, bg_code=bg_code, name=name))
+      return
+
+    sys.stdout.write('\x1b]10;{fg}\x9c\x1b]11;{bg}\x9c'.format(
+      fg=self.fg, bg=self.bg))
+
+if __name__ == '__main__':
+  App().main()
