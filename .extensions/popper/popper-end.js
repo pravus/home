@@ -1,6 +1,6 @@
 'use strict';
 
-let needles = {
+let e_needles = {
   "amazon.com": amazon,
   "ebay.com":   ebay,
   "medium.com": medium,
@@ -23,7 +23,7 @@ function ebay() {
 var host = window.location.host.split('.');
 while(host.length > 0) {
   var domain = host.join('.');
-  var needle = needles[domain];
+  var needle = e_needles[domain];
 
   if(typeof needle !== 'undefined') {
     console.log('popper end ('+ domain+ ')');
