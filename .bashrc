@@ -141,6 +141,7 @@ case "$-" in
     #
 
     test -x "$HOME/bin/wrap-ssh-agent" \
+      && test -z "${SSH_TTY}" \
       && test -z "${TTY_HOME}" \
       && "$HOME/bin/wrap-ssh-agent" \
       && . "$HOME/.ssh/ssh-agent.env"
