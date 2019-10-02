@@ -1,0 +1,53 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use Getopt::Long;
+
+sub ASCII() { join '', map { chr($_) } 0x20 .. 0x7e };
+
+main();
+
+sub main {
+  my $options = {
+    rounds => -1,
+    width  => exists $ENV{COLUMNS} ? $ENV{COLUMNS} : 80,
+  };
+
+  GetOptions($options =>
+    "rounds|r=i",
+    "width|w=i",
+    "help|?",
+  ) or usage();
+
+  usage()
+    if $options->{help};
+
+  lptest($options->{width}, $options->{rounds});
+}
+
+sub lptest {
+  my ($width, $rounds) = @_;
+
+  my $offset = 0;
+  my $length = length(ASCII);
+  my $ascii  = ASCII;
+  while(length($ascii) < (2 * $width)) {
+    $ascii .= ASCII;
+  }
+
+  while($rounds < 0 || $rounds > 0) {
+    print substr($ascii, $offset, $width). "\n";
+
+    $offset = ($offset + 1) % $length;
+
+    if($rounds > 0) {
+      $rounds -= 1;
+    }
+  }
+}
+
+sub usage { die(
+  "usage: $0 [-w|--width WIDTH] [-r|--rounds ROUNDS]\n",
+) }
