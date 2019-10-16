@@ -18,18 +18,18 @@ function amazon() {
 
 function medium() {
   (function () {
-    console.log('start medium: installing mutator watch for');
+    console.log('medium: installing mutation observers');
     let root = document;
     new MutationObserver(function(recs) {
       recs.forEach(function(mu) {
         mu.addedNodes.forEach(function(node) {
           if(node.tagName === 'IFRAME') {
-            console.log('start medium: removing iframe', node);
+            console.log('medium: removing iframe', node);
             node.parentNode.removeChild(node);
             return;
           }
           if(node.tagName === 'DIV' && node.parentNode.tagName === 'BODY' && node.id === '' && node.className === '' && node.children.length === 1 && node.children[0].tagName === 'DIV') {
-            console.log('start medium: removing pop-up', node, node.parentNode);
+            console.log('medium: removing pop-up', node, node.parentNode);
             node.parentNode.removeChild(node);
             return;
           }
