@@ -24,6 +24,15 @@
         "*://*/*"
       ],
       "js": [
+        "popper-idle.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
         "popper-end.js"
       ],
       "run_at": "document_end"

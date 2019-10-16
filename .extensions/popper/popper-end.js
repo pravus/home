@@ -3,7 +3,6 @@
 let e_needles = {
   "amazon.com": amazon,
   "ebay.com":   ebay,
-  "medium.com": medium,
 };
 
 function amazon() {

@@ -18,15 +18,18 @@ function amazon() {
 
 function medium() {
   (function () {
-    console.log('medium: installing mutator watch for <body>');
-    let root = document.body;
+    console.log('start medium: installing mutator watch for <body>');
+    let root = document;
     new MutationObserver(function(recs) {
       recs.forEach(function(mu) {
         mu.addedNodes.forEach(function(node) {
-          console.log('mutate.add', node);
+          if(node.parentNode.tagName === 'BODY' && node.tagName === 'DIV' && node.id === '' && node.className === '' && node.children.length === 1 && node.children[0].tagName === 'DIV') {
+            console.log('start medium: removing pop-up', node, node.parentNode);
+            node.parentNode.removeChild(node);
+          }
         });
       });
-    }).observe(root, {childList: true});
+    }).observe(root, {childList: true, subtree: true});
   })();
 }
 
