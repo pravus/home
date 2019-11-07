@@ -26,6 +26,10 @@ func main() {
       log:  WrapLog(os.Stdout, "", 0),
       text: "wrapped logger",
     },
+    {
+      log:  NewNullLogger(),
+      text: "null logger",
+    },
   }
 
   for _, example := range examples {

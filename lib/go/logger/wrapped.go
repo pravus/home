@@ -13,9 +13,6 @@ func WrapLog(out io.Writer, prefix string, flag int) *WrappedLogger {
   return &WrappedLogger{log: log.New(out, prefix, flag)}
 }
 
-func (logger WrappedLogger) Printf(format, args ...interface{}) {
-}
-
 func (logger WrappedLogger) Trace(args ...interface{}) {
   logger.log.Print(args...)
 }
