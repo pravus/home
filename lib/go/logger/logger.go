@@ -1,5 +1,9 @@
 package main
 
+import (
+//  "github.com/sirupsen/logrus"
+)
+
 type Logger interface {
   Trace(...interface{})
   Tracef(string, ...interface{})
@@ -21,6 +25,12 @@ type Logger interface {
 
   Panic(...interface{})
   Panicf(string, ...interface{})
+
+  WithError(error) Logger
+
+  //WithFields(map[string] interface{}) Logger
+  //WithFields(logrus.Fields) Logger
+  //WithFields(logrus.Fields) *logrus.Entry
 }
 
 /*

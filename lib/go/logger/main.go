@@ -1,7 +1,7 @@
 package main
 
 import (
-  "os"
+//  "os"
   "github.com/sirupsen/logrus"
 )
 
@@ -14,6 +14,7 @@ func main() {
     log  Logger
     text string
   }{
+/*
     {
       log:  log,
       text: "logrus standard",
@@ -29,6 +30,11 @@ func main() {
     {
       log:  NewNullLogger(),
       text: "null logger",
+    },
+*/
+    {
+      log:  NewLogrusLoggerAdapter(logrus.New()),
+      text: "logrus adapter",
     },
   }
 
