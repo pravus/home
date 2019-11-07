@@ -50,6 +50,7 @@
 # directory excludes
 /.389-console/
 /.adobe/
+/.android/
 /.audacity-data/
 /.bundle/
 /.cache/
@@ -59,6 +60,7 @@
 /.config/configstore/
 /.config/dconf/
 /.config/easytag/
+/.config/Electron/
 /.config/enchant/
 /.config/ephoto/
 /.config/fluentcloud-insights/
