@@ -4,6 +4,8 @@ import (
 //  "github.com/sirupsen/logrus"
 )
 
+type Fields map[string] interface{}
+
 type Logger interface {
   Trace(...interface{})
   Tracef(string, ...interface{})
@@ -27,9 +29,9 @@ type Logger interface {
   Panicf(string, ...interface{})
 
   WithError(error) Logger
+  WithFields(Fields) Logger
 
   //WithFields(map[string] interface{}) Logger
-  //WithFields(logrus.Fields) Logger
   //WithFields(logrus.Fields) *logrus.Entry
 }
 

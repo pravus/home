@@ -14,27 +14,23 @@ func main() {
     log  Logger
     text string
   }{
-/*
     {
-      log:  log,
+      log:  NewLogrusLoggerAdapter(log),
       text: "logrus standard",
     },
     {
-      log:  log.WithFields(logrus.Fields{"key": "value"}),
+      log:  NewLogrusEntryAdapter(log.WithFields(logrus.Fields{"key": "value"})),
       text: "logrus entry with fields",
     },
+/*
     {
       log:  WrapLog(os.Stdout, "", 0),
       text: "wrapped logger",
     },
+*/
     {
       log:  NewNullLogger(),
       text: "null logger",
-    },
-*/
-    {
-      log:  NewLogrusLoggerAdapter(logrus.New()),
-      text: "logrus adapter",
     },
   }
 

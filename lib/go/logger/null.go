@@ -49,3 +49,11 @@ func (logger NullLogger) Panic(args ...interface{}) {
 
 func (logger NullLogger) Panicf(format string, args ...interface{}) {
 }
+
+func (logger NullLogger) WithError(err error) Logger {
+  return logger
+}
+
+func (logger NullLogger) WithFields(fields Fields) Logger {
+  return logger
+}
