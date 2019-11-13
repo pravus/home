@@ -1,0 +1,8 @@
+#!/bin/sh
+
+test -z "$1" && {
+  echo "usage: len WORD"
+  exit 1
+}
+
+echo "${#1}"
