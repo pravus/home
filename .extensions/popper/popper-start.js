@@ -28,6 +28,11 @@ function medium() {
             node.parentNode.removeChild(node);
             return;
           }
+          if(node instanceof Text && node.textContent == "window.main();") {
+            console.log('medium: window.nope()');
+            node.parentNode.removeChild(node);
+            return;
+          }
           if(node.tagName === 'DIV' && node.parentNode.tagName === 'BODY' && node.id === '' && node.className === '' && node.children.length === 1 && node.children[0].tagName === 'DIV') {
             console.log('medium: removing pop-up', node, node.parentNode);
             node.parentNode.removeChild(node);
