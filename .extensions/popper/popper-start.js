@@ -7,6 +7,9 @@ var s_needles = {
 
 function amazon() {
   (function () {
+    if(window.location.host.match(/aws\.amazon\.com$/)) {
+      return;
+    }
     if(window.location.origin !== 'https://smile.amazon.com') {
       window.location.href = 
          'https://smile.amazon.com'

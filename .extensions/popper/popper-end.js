@@ -1,12 +1,8 @@
 'use strict';
 
 let e_needles = {
-  "amazon.com": amazon,
   "ebay.com":   ebay,
 };
-
-function amazon() {
-}
 
 function ebay() {
   (function () {
