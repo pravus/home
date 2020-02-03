@@ -98,21 +98,33 @@
   <keybind key="C-A-Left">
     <action name="MoveResizeTo">
       <width>568</width>
+      <!--
+      <width>730</width>
+      -->
     </action>
   </keybind>
   <keybind key="C-A-Right">
     <action name="MoveResizeTo">
       <width>932</width>
+      <!--
+      <width>1198</width>
+      -->
     </action>
   </keybind>
   <keybind key="C-A-Up">
     <action name="MoveResizeTo">
       <height>668</height>
+      <!--
+      <height>964</height>
+      -->
     </action>
   </keybind>
   <keybind key="C-A-Down">
     <action name="MoveResizeTo">
-      <height>356</height>
+      <height>350</height>
+      <!--
+      <height>508</height>
+      -->
     </action>
   </keybind>
   <keybind key="W-k">
@@ -120,6 +132,9 @@
     <action name="MaximizeVert"/>
     <action name="MoveResizeTo">
       <width>932</width>
+      <!--
+      <width>1198</width>
+      -->
     </action>
   </keybind>
   <keybind key="W-l">
@@ -127,14 +142,21 @@
     <action name="UnMaximizeVert"/>
     <action name="MoveResizeTo">
       <height>668</height>
+      <!--
+      <height>964</height>
+      -->
     </action>
   </keybind>
   <keybind key="W-n">
     <action name="UnMaximizeHorz"/>
     <action name="UnMaximizeVert"/>
     <action name="MoveResizeTo">
-      <height>356</height>
+      <height>350</height>
       <width>568</width>
+      <!--
+      <height>508</height>
+      <width>730</width>
+      -->
     </action>
   </keybind>
   <keybind key="W-r">
@@ -188,6 +210,11 @@
   <keybind key="W-e">
     <action name="Execute">
       <execute>urxvt</execute>
+    </action>
+  </keybind>
+  <keybind key="W-s">
+    <action name="Execute">
+      <execute>x-screenshot</execute>
     </action>
   </keybind>
   <keybind key="W-z">
