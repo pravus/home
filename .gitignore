@@ -44,6 +44,8 @@
 /.wget-hsts
 /.Xauthority
 /.xsession-errors
+/bin/fcli
+/bin/marker
 /bin/unit
 /bin/wlog
 
@@ -52,6 +54,7 @@
 /.adobe/
 /.android/
 /.audacity-data/
+/.aws/
 /.bundle/
 /.cache/
 /.config/audacious/
@@ -87,6 +90,7 @@
 /.dropbox-dist/
 /.dropbox/
 /.electron/
+/.fluentstream/
 /.fltk/
 /.gem/
 /.gimp-2.8/
