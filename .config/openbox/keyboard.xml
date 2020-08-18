@@ -4,6 +4,7 @@
    * desktops
    *
   -->
+<!--
   <keybind key="Menu">
     <keybind key="F1">
       <action name="Desktop">
@@ -59,6 +60,7 @@
       </action>
     </keybind>
   </keybind>
+-->
 
   <keybind key="W-F1">
     <action name="Desktop">
