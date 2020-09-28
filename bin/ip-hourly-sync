@@ -1,4 +1,4 @@
 #!/bin/bash
 
 test -r "$HOME/.ssh/ssh-agent.env" && . "$HOME/.ssh/ssh-agent.env"
-ssh ln0.carbon.cc 'bin/ip-via-ssh >abyss.nil'
+ssh nil.carbon.cc 'bin/ip-via-ssh >abyss.nil'

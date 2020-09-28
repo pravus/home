@@ -24,6 +24,7 @@
 /.hgignore.global
 /.hgrc
 /.g.db
+/.gtickrc
 /.lesshst
 /.lmmsrc.xml
 /.mongorc.js
@@ -59,9 +60,11 @@
 /.cache/
 /.config/audacious/
 /.config/autostart/
+/.config/Cadence/
 /.config/Code Industry/
 /.config/configstore/
 /.config/dconf/
+/.config/doctl/
 /.config/easytag/
 /.config/Electron/
 /.config/enchant/
@@ -72,7 +75,9 @@
 /.config/GIMP/
 /.config/google-chrome/
 /.config/gtk-2.0/
+/.config/guvcview2/
 /.config/htop/
+/.config/jack/
 /.config/menus/
 /.config/libfm/
 /.config/libreoffice/
@@ -81,9 +86,12 @@
 /.config/phototonic/
 /.config/psi/
 /.config/pulse/
+/.config/rncbc.org/
 /.config/Swift/
 /.config/VirtualBox/
+/.config/vlc/
 /.config/wireshark/
+/.config/whoozle.github.io/
 /.config/xfe/
 /.dia/
 /.docker/
@@ -106,6 +114,7 @@
 /.kube/
 /.links/
 /.local/
+/.log/
 /.macromedia/
 /.minetest/
 /.mozilla/
@@ -121,6 +130,7 @@
 /.purple/
 /.Spark/
 /.ssh/
+/.tor-browser/
 /.tor-browser-en/
 /.thumbnails/
 /.vagrant.d/
