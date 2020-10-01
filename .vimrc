@@ -56,31 +56,6 @@ augroup set_filetype
   au BufNewFile,BufRead *.p6sgi setf perl6
 augroup END
 
-augroup fluentstream
-  au!
-  au BufNewFile,BufRead asterisk.conf                        setf asterisk
-  au BufNewFile,BufRead extconfig.conf                       setf asterisk
-  au BufNewFile,BufRead extensions.conf                      setf asterisk
-  au BufNewFile,BufRead fc_feature_codes.conf                setf asterisk
-  au BufNewFile,BufRead fc_globals.conf                      setf asterisk
-  au BufNewFile,BufRead fluentcloud_infrastructure_aors.conf setf asterisk
-  au BufNewFile,BufRead fluentcloud_infrastructure.conf      setf asterisk
-  au BufNewFile,BufRead func_odbc.conf                       setf asterisk
-  au BufNewFile,BufRead manager.conf                         setf asterisk
-  au BufNewFile,BufRead modules.conf                         setf asterisk
-  au BufNewFile,BufRead musiconhold.conf                     setf asterisk
-  au BufNewFile,BufRead pjsip.conf                           setf asterisk
-  au BufNewFile,BufRead pjsip-transports.conf                setf asterisk
-  au BufNewFile,BufRead pjsip_notify.conf                    setf asterisk
-  au BufNewFile,BufRead res_odbc.conf                        setf asterisk
-  au BufNewFile,BufRead rtp.conf                             setf asterisk
-  au BufNewFile,BufRead sorcery.conf                         setf asterisk
-  au BufNewFile,BufRead subscriptions.conf                   setf asterisk
-  au BufNewFile,BufRead voicemail.conf                       setf asterisk
-  au BufNewFile,BufRead C-[0-9a-f]*                          setf asterisk
-  au BufNewFile,BufRead *.fs                                 setf php
-augroup END
-
 " filetype options
 augroup set_fileopts
   au!
