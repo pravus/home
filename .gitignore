@@ -8,23 +8,28 @@
 
 # file excludes
 /.asunder
+/.asoundrc
 /.config/conky/conky.conf.local
 /.config/emaildefaults
 /.config/k3brc
 /.config/knfsshare
 /.config/kwalletrc
 /.config/mimeapps.list
+/.config/patchagerc
 /.config/pavucontrol.ini
 /.config/Trolltech.conf
 /.config/QtProject.conf
+/.config/zoomus.conf
 /.dbshell
 /.erlang.cookie
 /.esd_auth
+/.fonts.conf
 /.hgignore
 /.hgignore.global
 /.hgrc
 /.g.db
 /.gtickrc
+/.jackdrc
 /.lesshst
 /.lmmsrc.xml
 /.mongorc.js
@@ -34,9 +39,11 @@
 /.node_repl_history
 /.nvidia-settings-rc
 /.procmail.log
+/.psql_history
 /.python_history
 /.rnd
 /.sqlite_history
+/.tk.g.db
 /.vim/.netrwhist
 /.viminfo
 /.vnc/*.log
@@ -64,6 +71,7 @@
 /.config/Code Industry/
 /.config/configstore/
 /.config/dconf/
+/.config/discord/
 /.config/doctl/
 /.config/easytag/
 /.config/Electron/
@@ -76,8 +84,12 @@
 /.config/google-chrome/
 /.config/gtk-2.0/
 /.config/guvcview2/
+/.config/helm/
 /.config/htop/
 /.config/jack/
+/.config/JetBrains/
+/.config/keybase/
+/.config/Keybase/
 /.config/menus/
 /.config/libfm/
 /.config/libreoffice/
@@ -88,6 +100,7 @@
 /.config/pulse/
 /.config/rncbc.org/
 /.config/Swift/
+/.config/Unknown Organization/
 /.config/VirtualBox/
 /.config/vlc/
 /.config/wireshark/
@@ -130,10 +143,12 @@
 /.purple/
 /.Spark/
 /.ssh/
+/.terraform.d/
 /.tor-browser/
 /.tor-browser-en/
 /.thumbnails/
 /.vagrant.d/
+/.zoom/
 /builds/
 /doc/
 /go/

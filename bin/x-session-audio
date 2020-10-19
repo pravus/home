@@ -1,5 +1,5 @@
 #!/bin/bash
 
-env which jack_control &>/dev/null && {
-  jack_control start
-}
+#env which jack_control &>/dev/null && {
+#  jack_control start
+#}

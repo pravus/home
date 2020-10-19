@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g --db=$HOME/.tk.g.db "$@"
