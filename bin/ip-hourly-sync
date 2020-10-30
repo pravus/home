@@ -1,4 +1,8 @@
 #!/bin/bash
 
-test -r "$HOME/.ssh/ssh-agent.env" && . "$HOME/.ssh/ssh-agent.env"
-ssh nil.carbon.cc 'bin/ip-via-ssh >abyss.nil'
+if [[ -z "${TOKEN}" ]]; then
+  echo "No authorization token set"
+  exit 1
+fi
+
+curl -XPUT -H"Authorization: Bearer ${TOKEN}" "https://www.carbon.cc/_util/nodes?name=$(hostname)"
