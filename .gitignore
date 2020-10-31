@@ -40,9 +40,12 @@
 /.nvidia-settings-rc
 /.procmail.log
 /.psql_history
+/.pulse-cookie
 /.python_history
 /.rnd
 /.sqlite_history
+/.steampath
+/.steampid
 /.tk.g.db
 /.vim/.netrwhist
 /.viminfo
@@ -52,10 +55,8 @@
 /.wget-hsts
 /.Xauthority
 /.xsession-errors
-/bin/fcli
 /bin/marker
-/bin/unit
-/bin/wlog
+/bin/youtube-dl
 
 # directory excludes
 /.389-console/
@@ -100,14 +101,17 @@
 /.config/pulse/
 /.config/rncbc.org/
 /.config/Swift/
+/.config/systemd/user/default.target.wants/
 /.config/Unknown Organization/
 /.config/VirtualBox/
+/.config/vivaldi/
 /.config/vlc/
 /.config/wireshark/
 /.config/whoozle.github.io/
 /.config/xfe/
 /.dia/
 /.docker/
+/.dosbox/
 /.dropbox-dist/
 /.dropbox/
 /.electron/
@@ -143,12 +147,15 @@
 /.pki/
 /.purple/
 /.Spark/
+/.srb2kart/
 /.ssh/
+/.steam/
 /.terraform.d/
 /.tor-browser/
 /.tor-browser-en/
 /.thumbnails/
 /.vagrant.d/
+/.wine/
 /.zoom/
 /builds/
 /doc/
