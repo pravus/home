@@ -14,6 +14,7 @@
   <item label="tor browser"><action name="Execute"><execute>tor-browser-en</execute></action></item>
   <item label="xfe"><action name="Execute"><execute>xfe</execute></action></item>
   <separator />
+  <item label="bitwarden"><action name="Execute"><execute>bitwarden-desktop</execute></action></item>
   <item label="keybase"><action name="Execute"><execute>keybase-gui</execute></action></item>
   <item label="discord"><action name="Execute"><execute>discord</execute></action></item>
   <item label="nethack"><action name="Execute"><execute>urxvt -fn 'xft:Terminus:pixelsize=27' -fg white -bg black -e nethack</execute></action></item>

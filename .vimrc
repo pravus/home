@@ -20,7 +20,7 @@ set formatoptions=tcq
 set hlsearch
 set ic
 set list
-set listchars=tab:•◦
+set listchars=tab:→ 
 set nobackup
 set nocp
 set noeb
@@ -61,9 +61,11 @@ augroup END
 " filetype options
 augroup set_fileopts
   au!
+
   "au FileType c      set noautoindent cindent
   "au FileType cpp    set noautoindent cindent
   au FileType go     set noexpandtab
+  "au FileType go     map <M-F> :!go fmt %<CR>:echo 'go fmt ran'<CR>
   au FileType list   set lisp
   au FileType make   set noexpandtab
   au FileType perl   let perl_extended_vars=1
@@ -72,6 +74,8 @@ augroup set_fileopts
   "au FileType sql    set filetype=plsql
   "au FileType proc   set filetype=c
   au FileType *      set autoindent
+
+  "au VimLeave *.go !go fmt %
 augroup END
 
 " match parens
@@ -97,6 +101,8 @@ syntax on
 silent! colorscheme muon
 "silent! colorscheme pyte
 "silent! colorscheme turbo
+
+hi SpecialKey ctermfg=darkgray
 
 " keybindings
 mapclear
