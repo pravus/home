@@ -19,6 +19,8 @@ set expandtab
 set formatoptions=tcq
 set hlsearch
 set ic
+set list
+set listchars=tab:•◦
 set nobackup
 set nocp
 set noeb
@@ -61,6 +63,7 @@ augroup set_fileopts
   au!
   "au FileType c      set noautoindent cindent
   "au FileType cpp    set noautoindent cindent
+  au FileType go     set noexpandtab
   au FileType list   set lisp
   au FileType make   set noexpandtab
   au FileType perl   let perl_extended_vars=1
