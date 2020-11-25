@@ -20,7 +20,13 @@ set formatoptions=tcq
 set hlsearch
 set ic
 set list
-set listchars=tab:→ 
+"set listchars=tab:→ 
+"set listchars=tab:‸ 
+"set listchars=tab:ˍ 
+"set listchars=tab:ˍˍ
+"set listchars=tab:¬ 
+"set listchars=tab:˽ 
+set listchars=tab:˾ 
 set nobackup
 set nocp
 set noeb
@@ -53,9 +59,11 @@ augroup END
 " filetype detection hints
 augroup set_filetype
   au!
-  au BufNewFile,BufRead *.pc    setf c
-  au BufNewFile,BufRead *.psgi  setf perl
-  au BufNewFile,BufRead *.p6sgi setf perl6
+  au BufNewFile,BufRead *.pc      setf c
+  au BufNewFile,BufRead *.psgi    setf perl
+  au BufNewFile,BufRead *.p6sgi   setf perl6
+  au BufNewFile,BufRead *.pgsql   setf pgsql
+  au BufNewFile,BufRead *.plpgsql setf pgsql
 augroup END
 
 " filetype options
