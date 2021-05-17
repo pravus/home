@@ -183,7 +183,7 @@ case "$-" in
     # options
     #
 
-    # turn of bash-completion because it fucking sucks
+    # turn off bash-completion because it fucking sucks
     complete -r
 
     # of the gods
