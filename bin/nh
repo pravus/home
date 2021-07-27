@@ -1,0 +1,4 @@
+#!/bin/bash
+
+test -x $HOME/bin/con && $HOME/bin/con -f gray -b black
+exec nethack

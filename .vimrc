@@ -79,6 +79,7 @@ augroup set_fileopts
   au FileType perl   let perl_extended_vars=1
   au FileType python let python_highlight_all=1
   au FileType scheme set lisp
+  au FileType text   syntax on
   "au FileType sql    set filetype=plsql
   "au FileType proc   set filetype=c
   au FileType *      set autoindent

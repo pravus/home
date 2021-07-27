@@ -1,0 +1,9 @@
+#!/bin/bash
+
+base=$HOME/.local/opt/ATLauncher
+
+cd "$base"
+java -jar ATLauncher.jar
+
+echo "backing up SkyFactory..."
+tar -cjvf "${base}/backups/SkyFactory-$(date +%Y%m%d%H%M%S).tar.bz2" "${base}/instances/SkyFactory"

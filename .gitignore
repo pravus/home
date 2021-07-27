@@ -13,11 +13,14 @@
 /.config/emaildefaults
 /.config/k3brc
 /.config/knfsshare
+/.config/kritadisplayrc
+/.config/kritarc
 /.config/kwalletrc
 /.config/mimeapps.list
 /.config/patchagerc
 /.config/pavucontrol.ini
 /.config/Trolltech.conf
+/.config/tuxclocker.conf
 /.config/QtProject.conf
 /.config/zoomus.conf
 /.dbshell
@@ -55,6 +58,7 @@
 /.wget-hsts
 /.Xauthority
 /.xsession-errors
+/bin/go-httpd
 /bin/marker
 /bin/youtube-dl
 
@@ -62,13 +66,16 @@
 /.389-console/
 /.adobe/
 /.android/
+/.atlauncher/
 /.audacity-data/
 /.aws/
 /.bundle/
 /.cache/
 /.config/audacious/
 /.config/autostart/
+/.config/Bitwarden/
 /.config/Cadence/
+/.config/cef_user_data/
 /.config/Code Industry/
 /.config/configstore/
 /.config/dconf/
@@ -78,8 +85,6 @@
 /.config/Electron/
 /.config/enchant/
 /.config/ephoto/
-/.config/fluentcloud-insights/
-/.config/fluentcloud-live-manager/
 /.config/gcloud/
 /.config/GIMP/
 /.config/google-chrome/
@@ -91,7 +96,7 @@
 /.config/JetBrains/
 /.config/keybase/
 /.config/Keybase/
-/.config/menus/
+/.config/lutris/
 /.config/libfm/
 /.config/libreoffice/
 /.config/menus/
@@ -99,9 +104,14 @@
 /.config/phototonic/
 /.config/psi/
 /.config/pulse/
+/.config/radeon-profile/
+/.config/REAPER/
+/.config/Risk_of_Rain/
 /.config/rncbc.org/
+/.config/StardewValley/
 /.config/Swift/
 /.config/systemd/user/default.target.wants/
+/.config/unity3d/
 /.config/Unknown Organization/
 /.config/VirtualBox/
 /.config/vivaldi/
@@ -115,8 +125,10 @@
 /.dropbox-dist/
 /.dropbox/
 /.electron/
-/.fluentstream/
+/.electron-gyp/
+/.FBReader/
 /.fltk/
+/.frozenbyte/
 /.gem/
 /.gimp-2.8/
 /.gnome/
@@ -135,6 +147,8 @@
 /.macromedia/
 /.masterpdfeditor/
 /.minetest/
+/.minikube/
+/.mono/
 /.mozilla/
 /.xscreensaver.d/
 /.nagstamon/
@@ -143,6 +157,8 @@
 /.npm/
 /.node-gyp/
 /.nv/
+/.nvm/
+/.openfaas/
 /.oracle_jre_usage/
 /.pki/
 /.purple/
@@ -154,12 +170,18 @@
 /.tor-browser/
 /.tor-browser-en/
 /.thumbnails/
+/.uplink/
 /.vagrant.d/
+/.vkquake/
 /.wine/
 /.zoom/
 /builds/
 /doc/
+/Documents/
+/Downloads/
+/Games/
 /go/
+/logs/
 /Maildir/
 /media/
 /node_modules/
