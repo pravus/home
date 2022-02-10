@@ -7,11 +7,17 @@
 /tmp
 
 # file excludes
-/.asunder
 /.asoundrc
+/.aspell.en.prepl
+/.aspell.en.pws
+/.asunder
 /.config/conky/conky.conf.local
 /.config/emaildefaults
 /.config/k3brc
+/.config/kbreakout.kmessagebox
+/.config/kbreakoutrc
+/.config/kdiamondrc
+/.config/kmahjonggrc
 /.config/knfsshare
 /.config/kritadisplayrc
 /.config/kritarc
@@ -61,6 +67,7 @@
 /bin/go-httpd
 /bin/marker
 /bin/youtube-dl
+/bin/yt-dlp
 
 # directory excludes
 /.389-console/
@@ -71,6 +78,7 @@
 /.aws/
 /.bundle/
 /.cache/
+/.config/ardour6/
 /.config/audacious/
 /.config/autostart/
 /.config/Bitwarden/
@@ -113,6 +121,7 @@
 /.config/systemd/user/default.target.wants/
 /.config/unity3d/
 /.config/Unknown Organization/
+/.config/Vampire_Survivors/
 /.config/VirtualBox/
 /.config/vivaldi/
 /.config/vlc/
@@ -136,6 +145,7 @@
 /.gphoto/
 /.gsutil/
 /.hg/
+/.hydrogen/
 /.icons/
 /.irssi/
 /.java/
@@ -161,6 +171,7 @@
 /.openfaas/
 /.oracle_jre_usage/
 /.pki/
+/.proglog/
 /.purple/
 /.Spark/
 /.srb2kart/
