@@ -13,6 +13,11 @@ if exists('$UHOME') && isdirectory($UHOME. '/.vim')
   set runtimepath^=$UHOME/.vim
 endif
 
+" default filetype if not set
+if $filetype == ""
+  set filetype=text
+endif
+
 " standard preferences
 set backspace=indent,eol,start
 set expandtab
