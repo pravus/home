@@ -13,11 +13,6 @@ if exists('$UHOME') && isdirectory($UHOME. '/.vim')
   set runtimepath^=$UHOME/.vim
 endif
 
-" default filetype if not set
-if $filetype == ""
-  set filetype=text
-endif
-
 " standard preferences
 set backspace=indent,eol,start
 set expandtab
@@ -91,6 +86,11 @@ augroup set_fileopts
 
   "au VimLeave *.go !go fmt %
 augroup END
+
+" default filetype if not set
+if $filetype == ""
+  setf text
+endif
 
 " match parens
 if version >= 700
