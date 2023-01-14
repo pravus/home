@@ -84,6 +84,7 @@
 /.config/Bitwarden/
 /.config/Cadence/
 /.config/cef_user_data/
+/.config/cni/
 /.config/Code Industry/
 /.config/configstore/
 /.config/dconf/
@@ -109,6 +110,8 @@
 /.config/libreoffice/
 /.config/menus/
 /.config/netcitadel.com/
+/.config/nuclearthrone/
+/.config/obs-studio/
 /.config/phototonic/
 /.config/psi/
 /.config/pulse/
@@ -172,6 +175,7 @@
 /.oracle_jre_usage/
 /.pki/
 /.proglog/
+/.pulse/
 /.purple/
 /.Spark/
 /.srb2kart/

@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+PATH=/site/perl/bin:$PATH
+/site/perl/bin/g "$@"

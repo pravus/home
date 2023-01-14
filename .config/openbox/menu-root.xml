@@ -10,7 +10,7 @@
   <item label="xterm"><action name="Execute"><execute>xterm</execute></action></item>
   <item label="firefox"><action name="Execute"><execute>firefox</execute></action></item>
   <item label="vivaldi"><action name="Execute"><execute>vivaldi-stable</execute></action></item>
-  <item label="tor browser"><action name="Execute"><execute>tor-browser-en</execute></action></item>
+  <item label="tor browser"><action name="Execute"><execute>tor-browser</execute></action></item>
   <item label="xfe"><action name="Execute"><execute>xfe</execute></action></item>
   <separator />
   <item label="bitwarden"><action name="Execute"><execute>bitwarden-desktop</execute></action></item>

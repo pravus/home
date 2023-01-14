@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 6.02 for jhord on Tue Feb  8 07:23:11 2022.
+# Written by xscreensaver-demo 6.03 for jhord on Sat Jun 11 05:32:51 2022.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:30:00
@@ -285,6 +285,8 @@ programs:								      \
   GL: 				sphereeversion -root			    \n\
 				binaryhorizon -root			    \n\
 				marbling -root				    \n\
+  GL: 				mapscroller -root			    \n\
+  GL: 				squirtorus -root			    \n\
 
 
 pointerHysteresis:  10

@@ -1,3 +1,7 @@
 * {
   -GtkWidget-window-dragging: false;
 }
+
+menubar, .menubar {
+  -GtkWidget-window-dragging: false;
+}
