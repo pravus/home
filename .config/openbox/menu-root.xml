@@ -12,6 +12,7 @@
   <item label="vivaldi"><action name="Execute"><execute>vivaldi-stable</execute></action></item>
   <item label="tor browser"><action name="Execute"><execute>tor-browser</execute></action></item>
   <item label="xfe"><action name="Execute"><execute>xfe</execute></action></item>
+  <item label="claws-mail"><action name="Execute"><execute>claws-mail</execute></action></item>
   <separator />
   <item label="bitwarden"><action name="Execute"><execute>bitwarden-desktop</execute></action></item>
   <item label="keybase"><action name="Execute"><execute>keybase-gui</execute></action></item>

@@ -11,6 +11,8 @@
 /.aspell.en.prepl
 /.aspell.en.pws
 /.asunder
+/.claws-mail
+/.config/aerc
 /.config/conky/conky.conf.local
 /.config/emaildefaults
 /.config/k3brc
@@ -64,8 +66,10 @@
 /.wget-hsts
 /.Xauthority
 /.xsession-errors
-/bin/go-httpd
+/bin/g
 /bin/marker
+/bin/ultra
+/bin/watch-video
 /bin/youtube-dl
 /bin/yt-dlp
 
@@ -203,7 +207,6 @@
 /opt/
 /private/
 /public_html/
-/src/
 /tmp/
 /var/
 /VirtualBox VMs/

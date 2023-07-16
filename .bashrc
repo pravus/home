@@ -1,5 +1,5 @@
 ########################################################################
-# site global settings
+# global settings
 #
 
 test "$OSTYPE" = "linux" -a -r /etc/profile && . /etc/profile
@@ -41,10 +41,6 @@ path-append() {
 
 path-prepend $UHOME/.local/bin $UHOME/bin
 export PATH
-
-test "$USER" == "vagrant" && {
-  path-prepend /home/vagrant/.nvm/versions/node/v8.1.2/bin
-}
 
 
 ########################################################################
@@ -97,9 +93,8 @@ case "$-" in
     }
 
     env which go &>/dev/null && {
-      GOPATH=$UHOME/src/go
+      GOPATH=$UHOME/.local/lib/go
       export GOPATH
-
       path-prepend $GOPATH/bin
     }
 
@@ -114,11 +109,6 @@ case "$-" in
 
       PAGER=less
       export PAGER
-    }
-
-    env which perldoc &>/dev/null && {
-      PERLDOC='-MPod::Text::Color::Delight'
-      export PERLDOC
     }
 
     test -r $UHOME/.screenrc && {
@@ -166,7 +156,6 @@ case "$-" in
     # aliases
     #
 
-    alias gre='/bin/grep --color=auto -EI'
     alias grep='/bin/grep --color=auto'
     alias l='/bin/ls -Al'
     alias ls='/bin/ls'
