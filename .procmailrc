@@ -36,6 +36,7 @@ $DEFAULT/.Junk/
   |^Subject:.*mailbox.*exceeded\
   |^Subject:.*\[SPAM:\
   |^Received:.*develooper\
+  |^X-AntiAbuse:.*\
   )
 $DEFAULT/.Junk/
 
