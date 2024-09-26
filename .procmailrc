@@ -23,7 +23,7 @@ LOGFILE=/home/jhord/.procmail.log
 ########################################################################
 # spam
 :0 fw
-| /usr/bin/vendor_perl/spamc -l -s 4000000
+| /usr/bin/spamc -l -s 4000000
 
 :0
 * ^X-Spam-Status: Yes
@@ -37,6 +37,10 @@ $DEFAULT/.Junk/
   |^Subject:.*\[SPAM:\
   |^Received:.*develooper\
   |^X-AntiAbuse:.*\
+  |^List-Unsubscribe:.*\
+  |^X-Mailer:.*Microsoft Outlook Express.*\
+  |^X-Mandrill-User:.*\
+  |^X-Mailgun-Sid:.*\
   )
 $DEFAULT/.Junk/
 

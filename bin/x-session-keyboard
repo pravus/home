@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# set us model
 setxkbmap -model evdev -layout us
+# disable caps-lock
+#setxkbmap -option ctrl:nocaps
+# enable ctrl-alt-backspace X session zapping
 setxkbmap -option terminate:ctrl_alt_bksp
 
 # disable terminal bell
@@ -11,3 +15,7 @@ xset r rate 250 48
 
 # load keymappings
 test -r $HOME/.Xmodmap && xmodmap $HOME/.Xmodmap
+# TODO: tux key is mapped to Super_[LR]
+#xmodmap -e 'keycode 77 ='
+#xmodmap -e 'keycode 108 = Multi_key'
+#xmodmap -e 'keycode 135 = Menu'

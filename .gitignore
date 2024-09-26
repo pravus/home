@@ -34,6 +34,7 @@
 /.dbshell
 /.erlang.cookie
 /.esd_auth
+/.fehbg
 /.fonts.conf
 /.hgignore
 /.hgignore.global
@@ -63,8 +64,11 @@
 /.vnc/*.log
 /.vnc/*.pid
 /.vnc/passwd
+/.xwallpaper
 /.wget-hsts
 /.Xauthority
+/.xpdf.pages
+/.xpdf.session
 /.xsession-errors
 /bin/g
 /bin/marker
@@ -88,6 +92,7 @@
 /.config/Bitwarden/
 /.config/Cadence/
 /.config/cef_user_data/
+/.config/chromium/
 /.config/cni/
 /.config/Code Industry/
 /.config/configstore/
@@ -142,6 +147,7 @@
 /.dropbox/
 /.electron/
 /.electron-gyp/
+/.extensions/
 /.FBReader/
 /.fltk/
 /.frozenbyte/
@@ -207,6 +213,7 @@
 /opt/
 /private/
 /public_html/
+/rip/
 /tmp/
 /var/
 /VirtualBox VMs/
