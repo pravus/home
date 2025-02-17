@@ -15,6 +15,9 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*<support.m109riders@gmail.com>\
   |^From:.*Pharmacy\
   |^From:.*"Microsoft Outlook"\
+  |^From:.*Pudgy Penguins\
+  |^From:.*.click\
+  |^From:.*.top\
   |^Subject: nihil .* satan666
   )
 /dev/null

@@ -1,1 +1,1 @@
-watch -cn1 'cal -3 --color=always'
+watch -tcn1 'date; echo; cal -3 --color=always'

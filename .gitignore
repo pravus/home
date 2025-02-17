@@ -105,6 +105,7 @@
 /.config/ephoto/
 /.config/gcloud/
 /.config/GIMP/
+/.config/go/
 /.config/google-chrome/
 /.config/gtk-2.0/
 /.config/guvcview2/
