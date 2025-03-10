@@ -18,6 +18,7 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*Pudgy Penguins\
   |^From:.*.click\
   |^From:.*.top\
+  |^From:.*.sa.com\
   |^Subject: nihil .* satan666
   )
 /dev/null
