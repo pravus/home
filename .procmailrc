@@ -19,6 +19,7 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*.click\
   |^From:.*.top\
   |^From:.*.sa.com\
+  |^From:.*.za.com\
   |^Subject: nihil .* satan666
   )
 /dev/null
