@@ -10,8 +10,10 @@ fallout.fandom.com##.WikiaRail.right-rail-wrapper
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! reverb
-reverb.com##.site-wrapper.mb-2.mt-3
 reverb.com##.amp-banner
+reverb.com##.category-flyout-header__view-more
+reverb.com###header-dropdown-news
+reverb.com###header-dropdown-explore-secondary
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! wikipedia
@@ -21,6 +23,7 @@ en.wikipedia.org##.cbnnr-main
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! google
 www.google.com##.M8OgIe
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! youtube
@@ -684,3 +687,17 @@ www.youtube.com##ytd-rich-item-renderer:has(a[href="/@RepMattGaetz"]):remove()
 www.youtube.com##ytd-rich-item-renderer:has(a[href="/@jasonstephensonmeditation"]):remove()
 www.youtube.com##ytd-rich-item-renderer:has(a[href="/@RealTime"]):remove()
 www.youtube.com##ytd-rich-item-renderer:has(a[href="/@songwritersummit6382"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@RelaxingRainSleep-y4g"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@MentourNow"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@WaterflowRelaxation"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@BassBuzz"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@ShaksBassChannel"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@DrumeoOfficial"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@LowEndLobster"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@masgerentertainment"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@TrantaRelax"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@KidsLearn-x9p"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@NorthYukiHusky"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@TastingHistory"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@0illiam0"]):remove()
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@History-Valley"]):remove()

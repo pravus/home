@@ -10,8 +10,10 @@ fallout.fandom.com##.WikiaRail.right-rail-wrapper
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! reverb
-reverb.com##.site-wrapper.mb-2.mt-3
 reverb.com##.amp-banner
+reverb.com##.category-flyout-header__view-more
+reverb.com###header-dropdown-news
+reverb.com###header-dropdown-explore-secondary
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! wikipedia
@@ -21,6 +23,7 @@ en.wikipedia.org##.cbnnr-main
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! google
 www.google.com##.M8OgIe
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! youtube
@@ -685,6 +688,20 @@ www.youtube.com###big-yoodle > .ytd-rich-grid-renderer.style-scope
   "@jasonstephensonmeditation"
   "@RealTime"
   "@songwritersummit6382"
+  "@RelaxingRainSleep-y4g"
+  "@MentourNow"
+  "@WaterflowRelaxation"
+  "@BassBuzz"
+  "@ShaksBassChannel"
+  "@DrumeoOfficial"
+  "@LowEndLobster"
+  "@masgerentertainment"
+  "@TrantaRelax"
+  "@KidsLearn-x9p"
+  "@NorthYukiHusky"
+  "@TastingHistory"
+  "@0illiam0"
+  "@History-Valley"
 -}}
 www.youtube.com##ytd-rich-item-renderer:has(a[href="/{{ . }}"]):remove()
 {{- /* www.youtube.com##div.ytd-rich-item-renderer:has(ytd-channel-name a[href="/"]):remove() */}}

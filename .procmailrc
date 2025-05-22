@@ -10,7 +10,10 @@ LOGFILE=/home/jhord/.procmail.log
 # blackhole
 :0
 * (\
-   ^From:.*<vinylspecialist@vinylspecialist.de>\
+   ^From:.*=\?utf-8\
+  |^To:.*=\?utf-8\
+  |^Subject:.*=\?utf-8\
+  |^From:.*<vinylspecialist@vinylspecialist.de>\
   |^From:.*<webmaster@m109riders.com>\
   |^From:.*<support.m109riders@gmail.com>\
   |^From:.*Pharmacy\
