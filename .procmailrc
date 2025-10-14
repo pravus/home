@@ -13,16 +13,14 @@ LOGFILE=/home/jhord/.procmail.log
    ^From:.*=\?utf-8\
   |^To:.*=\?utf-8\
   |^Subject:.*=\?utf-8\
-  |^From:.*<vinylspecialist@vinylspecialist.de>\
-  |^From:.*<webmaster@m109riders.com>\
-  |^From:.*<support.m109riders@gmail.com>\
   |^From:.*Pharmacy\
   |^From:.*"Microsoft Outlook"\
   |^From:.*Pudgy Penguins\
-  |^From:.*.click\
-  |^From:.*.top\
-  |^From:.*.sa.com\
-  |^From:.*.za.com\
+  |^From:.*\.click\
+  |^From:.*\.top\
+  |^From:.*\.sa\.com\
+  |^From:.*\.za\.com\
+  |^Received:.*colocrossing\.com\
   |^Subject: nihil .* satan666
   )
 /dev/null
