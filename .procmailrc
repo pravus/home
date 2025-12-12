@@ -17,11 +17,14 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*"Microsoft Outlook"\
   |^From:.*Pudgy Penguins\
   |^From:.*\.click\
+  |^From:.*\.com\.cy\
   |^From:.*\.top\
+  |^From:.*\.proton\.me\
   |^From:.*\.sa\.com\
   |^From:.*\.za\.com\
+  |^From:.*neurofreak\
   |^Received:.*colocrossing\.com\
-  |^Subject: nihil .* satan666
+  |^Subject: nihil .* satan666\
   )
 /dev/null
 
