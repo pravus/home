@@ -24,6 +24,7 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*\.za\.com\
   |^From:.*neurofreak\
   |^Received:.*colocrossing\.com\
+  |^Reply-To:.*gmail.com\
   |^Subject: nihil .* satan666\
   )
 /dev/null
