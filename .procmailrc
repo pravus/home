@@ -26,6 +26,7 @@ LOGFILE=/home/jhord/.procmail.log
   |^Received:.*colocrossing\.com\
   |^Reply-To:.*gmail.com\
   |^Subject: nihil .* satan666\
+  |^X-Virus-Scanned:.*\
   )
 /dev/null
 
