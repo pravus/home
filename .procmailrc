@@ -16,10 +16,11 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*Pharmacy\
   |^From:.*"Microsoft Outlook"\
   |^From:.*Pudgy Penguins\
+  |^From:.*@hotmail.com\
   |^From:.*\.click\
   |^From:.*\.com\.cy\
-  |^From:.*\.top\
   |^From:.*\.proton\.me\
+  |^From:.*\.top\
   |^From:.*\.sa\.com\
   |^From:.*\.za\.com\
   |^From:.*neurofreak\
