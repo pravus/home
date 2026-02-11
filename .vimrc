@@ -50,6 +50,11 @@ augroup gentoo
   au!
 augroup END
 
+" fuck redhat too.  why do they use such horrible fucking settings?
+augroup redhat
+  au!
+augroup END
+
 " removes annoying errors when writing a read-only file
 augroup set_ro
   au!
@@ -117,6 +122,7 @@ silent! colorscheme muon
 "silent! colorscheme turbo
 
 hi SpecialKey ctermfg=darkgray
+hi Comment    ctermfg=darkcyan
 
 " keybindings
 mapclear
