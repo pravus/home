@@ -19,6 +19,7 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*@hotmail.com\
   |^From:.*\.click\
   |^From:.*\.com\.cy\
+  |^From:.*\.house.gov\
   |^From:.*\.proton\.me\
   |^From:.*\.top\
   |^From:.*\.sa\.com\
