@@ -13,9 +13,11 @@ LOGFILE=/home/jhord/.procmail.log
    ^From:.*=\?utf-8\
   |^To:.*=\?utf-8\
   |^Subject:.*=\?utf-8\
+  |^From:.*Mail Delivery System\
   |^From:.*Pharmacy\
   |^From:.*"Microsoft Outlook"\
   |^From:.*Pudgy Penguins\
+  |^From:.*mailer-daemon@\
   |^From:.*@hotmail.com\
   |^From:.*\.click\
   |^From:.*\.com\.cy\
@@ -27,6 +29,7 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*neurofreak\
   |^Received:.*colocrossing\.com\
   |^Reply-To:.*gmail.com\
+  |^Return-Path:.*i4dots.com\
   |^Subject: nihil .* satan666\
   |^X-Virus-Scanned:.*\
   )
