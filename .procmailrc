@@ -18,19 +18,25 @@ LOGFILE=/home/jhord/.procmail.log
   |^From:.*"Microsoft Outlook"\
   |^From:.*Pudgy Penguins\
   |^From:.*mailer-daemon@\
-  |^From:.*@hotmail.com\
+  |^From:.*@hotmail\.com\
   |^From:.*\.click\
   |^From:.*\.com\.cy\
   |^From:.*\.house.gov\
+  |^From:.*\.intuit\.com>\
+  |^From:.*\.online\
   |^From:.*\.proton\.me\
   |^From:.*\.top\
   |^From:.*\.sa\.com\
   |^From:.*\.za\.com\
+  |^From:.*\.za>\
   |^From:.*neurofreak\
   |^Received:.*colocrossing\.com\
   |^Reply-To:.*gmail.com\
+  |^Reply-To:.*yahoo.com\
   |^Return-Path:.*i4dots.com\
   |^Subject: nihil .* satan666\
+  |^X-Antivirus:.*\
+  |^X-Antivirus-Status:.*\
   |^X-Virus-Scanned:.*\
   )
 /dev/null

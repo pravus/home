@@ -69,6 +69,15 @@ urxvt.perl-ext-common: font-cycle
 
 ! default font
 urxvt.font: 8x13
+
+! URxvt.font: xft:Noto Sans Symbols 2:size=11:antialias=true
+
+!URxvt.font: xft:DejaVu Sans Mono:size=11:antialias=true
+!URxvt.font: xft:Symbola:size=11:antialias=true
+!URxvt.font: xft:ubraille:size=11:antialias=true
+!URxvt.font: xft:Atkinson Hyperlegible:size=11:antialias=true
+
+!urxvt.font: xft:FreeMono
 !urxvt.font: xft:Misc Fixed
 !urxvt.font: xft:VGA
 !urxvt.font: xft:Hack
